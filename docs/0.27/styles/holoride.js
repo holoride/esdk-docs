@@ -1,7 +1,7 @@
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 const docsRoot = "/docs";
-const versions = window.location.origin + docsRoot + "/.metadata/versions.json";
+const versions = window.location + "/.metadata/versions.json";
 const localhost = window.location.hostname === "localhost"
 const versionDropdownMenu = document.getElementById("versionDropdownMenu");
 
