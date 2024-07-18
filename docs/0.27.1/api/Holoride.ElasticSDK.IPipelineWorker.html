@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPipelineWorker
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPipelineWorker
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.IPipelineWorker">
+
+
+  <h1 id="Holoride_ElasticSDK_IPipelineWorker" data-uid="Holoride.ElasticSDK.IPipelineWorker" class="text-break">Interface IPipelineWorker
+</h1>
+  <div class="markdown level0 summary"><p>An interface to define an element of a pipeline with its lifecycle methods and <a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html#Holoride_ElasticSDK_IPipelineWorker_Inputs">Inputs</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_IPipelineWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public interface IPipelineWorker</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_CurrentGenerationContext_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CurrentGenerationContext*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_CurrentGenerationContext" data-uid="Holoride.ElasticSDK.IPipelineWorker.CurrentGenerationContext">CurrentGenerationContext</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the current generation context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GenerationContext CurrentGenerationContext { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationContext.html">GenerationContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_GenerationSettings_" data-uid="Holoride.ElasticSDK.IPipelineWorker.GenerationSettings*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_GenerationSettings" data-uid="Holoride.ElasticSDK.IPipelineWorker.GenerationSettings">GenerationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets the immutable data that cannot be changed during the whole generation loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GenerationSettings GenerationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationSettings.html">GenerationSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_GenerationState_" data-uid="Holoride.ElasticSDK.IPipelineWorker.GenerationState*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_GenerationState" data-uid="Holoride.ElasticSDK.IPipelineWorker.GenerationState">GenerationState</h4>
+  <div class="markdown level1 summary"><p>Gets the current state of the generation process and will be updated over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GenerationState GenerationState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationState.html">GenerationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_HasMissingMandatoryInputInHierarchy_" data-uid="Holoride.ElasticSDK.IPipelineWorker.HasMissingMandatoryInputInHierarchy*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_HasMissingMandatoryInputInHierarchy" data-uid="Holoride.ElasticSDK.IPipelineWorker.HasMissingMandatoryInputInHierarchy">HasMissingMandatoryInputInHierarchy</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this worker has any missing mandatory input in hierarchy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasMissingMandatoryInputInHierarchy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_Inputs_" data-uid="Holoride.ElasticSDK.IPipelineWorker.Inputs*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_Inputs" data-uid="Holoride.ElasticSDK.IPipelineWorker.Inputs">Inputs</h4>
+  <div class="markdown level1 summary"><p>Gets the input <a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html">IPipelineWorker</a>s to be processed before this worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IPipelineWorker&gt; Inputs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html">IPipelineWorker</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_IsGatheringResources_" data-uid="Holoride.ElasticSDK.IPipelineWorker.IsGatheringResources*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_IsGatheringResources" data-uid="Holoride.ElasticSDK.IPipelineWorker.IsGatheringResources">IsGatheringResources</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this node is gathering resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsGatheringResources { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_IsProcessing_" data-uid="Holoride.ElasticSDK.IPipelineWorker.IsProcessing*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_IsProcessing" data-uid="Holoride.ElasticSDK.IPipelineWorker.IsProcessing">IsProcessing</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this node is processing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsProcessing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_MissingMandatoryInputs_" data-uid="Holoride.ElasticSDK.IPipelineWorker.MissingMandatoryInputs*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_MissingMandatoryInputs" data-uid="Holoride.ElasticSDK.IPipelineWorker.MissingMandatoryInputs">MissingMandatoryInputs</h4>
+  <div class="markdown level1 summary"><p>Gets all missing mandatory inputs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyCollection&lt;string&gt; MissingMandatoryInputs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_Pipeline_" data-uid="Holoride.ElasticSDK.IPipelineWorker.Pipeline*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_Pipeline" data-uid="Holoride.ElasticSDK.IPipelineWorker.Pipeline">Pipeline</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the pipeline this worker currently belongs to.
+A worker can always only belong to a single pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Pipeline Pipeline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.Pipeline.html">Pipeline</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_AddInput_" data-uid="Holoride.ElasticSDK.IPipelineWorker.AddInput*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_AddInput_System_String_Holoride_ElasticSDK_IPipelineWorker_" data-uid="Holoride.ElasticSDK.IPipelineWorker.AddInput(System.String,Holoride.ElasticSDK.IPipelineWorker)">AddInput(string, IPipelineWorker)</h4>
+  <div class="markdown level1 summary"><p>Adds an input PipelineWorker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddInput(string id, IPipelineWorker pipelineWorker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id of the input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html">IPipelineWorker</a></td>
+        <td><span class="parametername">pipelineWorker</span></td>
+        <td><p>The PipelineWorker to set as an input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_AddMissingMandatoryInput_" data-uid="Holoride.ElasticSDK.IPipelineWorker.AddMissingMandatoryInput*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_AddMissingMandatoryInput_System_String_" data-uid="Holoride.ElasticSDK.IPipelineWorker.AddMissingMandatoryInput(System.String)">AddMissingMandatoryInput(string)</h4>
+  <div class="markdown level1 summary"><p>Adds a missing input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddMissingMandatoryInput(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id of the missing input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_CallCleanUp_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallCleanUp*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_CallCleanUp" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallCleanUp">CallCleanUp()</h4>
+  <div class="markdown level1 summary"><p>Cleans up this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Dispose() instead.&quot;)]
+void CallCleanUp()</code></pre>
+  </div>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_CallGatherResourcesAsync_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallGatherResourcesAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_CallGatherResourcesAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallGatherResourcesAsync(Holoride.ElasticSDK.GenerationContext,System.IProgress{System.Single},System.Threading.CancellationToken)">CallGatherResourcesAsync(GenerationContext, IProgress&lt;float&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gathers the resources required for this node in order to be processed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UniTask&lt;LoadResourceResult&gt; CallGatherResourcesAsync(GenerationContext context, IProgress&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationContext.html">GenerationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>Contains the immutable meta-information of a single update iteration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">onProgressUpdate</span></td>
+        <td><p>The feedback function passing the (down)loading progress [0, 1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask&lt;T&gt;</span>&lt;<a class="xref" href="Holoride.ElasticSDK.LoadResourceResult.html">LoadResourceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_CallInit_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallInit*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_CallInit" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallInit">CallInit()</h4>
+  <div class="markdown level1 summary"><p>Initializes this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CallInit()</code></pre>
+  </div>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_CallInitResources_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallInitResources*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_CallInitResources" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallInitResources">CallInitResources()</h4>
+  <div class="markdown level1 summary"><p>Initializes the resources required for this node in order to be processed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CallInitResources()</code></pre>
+  </div>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_CallProcessAsync_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallProcessAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_CallProcessAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.IPipelineWorker.CallProcessAsync(Holoride.ElasticSDK.GenerationContext,System.IProgress{System.Single},System.Threading.CancellationToken)">CallProcessAsync(GenerationContext, IProgress&lt;float&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The default process function that is called for every CompositingNode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UniTask CallProcessAsync(GenerationContext context, IProgress&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationContext.html">GenerationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>Contains the immutable meta-information of a single update iteration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">onProgressUpdate</span></td>
+        <td><p>Called with relative progress in [0, 1]. May be called from another thread.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_IPipelineWorker_GetInput_" data-uid="Holoride.ElasticSDK.IPipelineWorker.GetInput*"></a>
+  <h4 id="Holoride_ElasticSDK_IPipelineWorker_GetInput_System_String_" data-uid="Holoride.ElasticSDK.IPipelineWorker.GetInput(System.String)">GetInput(string)</h4>
+  <div class="markdown level1 summary"><p>Gets an input PipelineWorker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPipelineWorker GetInput(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id of the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html">IPipelineWorker</a></td>
+        <td><p>The corresponding input PipelineWorker.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

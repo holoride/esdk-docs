@@ -1,0 +1,840 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TileDataService&lt;T&gt;
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TileDataService&lt;T&gt;
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.TileDataService`1">
+
+
+  <h1 id="Holoride_ElasticSDK_TileDataService_1" data-uid="Holoride.ElasticSDK.TileDataService`1" class="text-break">Class TileDataService&lt;T&gt;
+</h1>
+  <div class="markdown level0 summary"><p>Downloads and caches tiles to the hard drive.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">TileDataService&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="Holoride.ElasticSDK.TileImageServiceRoadMask.html">TileImageServiceRoadMask</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Holoride.ElasticSDK.ITileDataService-1.html">ITileDataService</a>&lt;T&gt;</div>
+    <div><a class="xref" href="Holoride.ElasticSDK.ITileDataProvider-1.html">ITileDataProvider</a>&lt;T&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_TileDataService_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TileDataService&lt;T&gt; : ITileDataService&lt;T&gt;, ITileDataProvider&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1__ctor_" data-uid="Holoride.ElasticSDK.TileDataService`1.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1__ctor_Holoride_ElasticSDK_TileDataServiceConfiguration_" data-uid="Holoride.ElasticSDK.TileDataService`1.#ctor(Holoride.ElasticSDK.TileDataServiceConfiguration)">TileDataService(TileDataServiceConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a TileDataService.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TileDataService(TileDataServiceConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.TileDataServiceConfiguration.html">TileDataServiceConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_CacheVersion" data-uid="Holoride.ElasticSDK.TileDataService`1.CacheVersion">CacheVersion</h4>
+  <div class="markdown level1 summary"><p>Version of the cached files. Used in case of incompatibility with previously downloaded files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int CacheVersion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_Configuration" data-uid="Holoride.ElasticSDK.TileDataService`1.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Configuration for this service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TileDataServiceConfiguration Configuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.TileDataServiceConfiguration.html">TileDataServiceConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_VersionedCacheSubDirectory" data-uid="Holoride.ElasticSDK.TileDataService`1.VersionedCacheSubDirectory">VersionedCacheSubDirectory</h4>
+  <div class="markdown level1 summary"><p>The fully qualified path to the tile data cache, of the specific service, based on its name and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string VersionedCacheSubDirectory</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_CacheMapTileDataAsync_" data-uid="Holoride.ElasticSDK.TileDataService`1.CacheMapTileDataAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_CacheMapTileDataAsync_Holoride_ElasticSDK_TileAreaDescription_System_IProgress_System_Single__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.TileDataService`1.CacheMapTileDataAsync(Holoride.ElasticSDK.TileAreaDescription,System.IProgress{System.Single},System.Threading.CancellationToken)">CacheMapTileDataAsync(TileAreaDescription, IProgress&lt;float&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;LoadResourceResult&gt; CacheMapTileDataAsync(TileAreaDescription tileAreaDescription, IProgress&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.TileAreaDescription.html">TileAreaDescription</a></td>
+        <td><span class="parametername">tileAreaDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">onProgressUpdate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask&lt;T&gt;</span>&lt;<a class="xref" href="Holoride.ElasticSDK.LoadResourceResult.html">LoadResourceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_CacheMapTileDataAsync_" data-uid="Holoride.ElasticSDK.TileDataService`1.CacheMapTileDataAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_CacheMapTileDataAsync_System_Int32_UnityEngine_Vector2Int_System_IProgress_System_Single__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.TileDataService`1.CacheMapTileDataAsync(System.Int32,UnityEngine.Vector2Int,System.IProgress{System.Single},System.Threading.CancellationToken)">CacheMapTileDataAsync(int, Vector2Int, IProgress&lt;float&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;LoadResourceResult&gt; CacheMapTileDataAsync(int zoomLevel, Vector2Int tilePos, IProgress&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">tilePos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">onProgressUpdate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask&lt;T&gt;</span>&lt;<a class="xref" href="Holoride.ElasticSDK.LoadResourceResult.html">LoadResourceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_Deserialize_" data-uid="Holoride.ElasticSDK.TileDataService`1.Deserialize*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_Deserialize_System_Byte____0__" data-uid="Holoride.ElasticSDK.TileDataService`1.Deserialize(System.Byte[],`0@)">Deserialize(byte[], out T)</h4>
+  <div class="markdown level1 summary"><p>Defines how the downloaded data is deserialized. This function will be called on the Unity main
+thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Deserialize(byte[] data, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The downloaded data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The deserialized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether the object was deserialized successfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_Deserialize_" data-uid="Holoride.ElasticSDK.TileDataService`1.Deserialize*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_Deserialize_System_IO_Stream__0__" data-uid="Holoride.ElasticSDK.TileDataService`1.Deserialize(System.IO.Stream,`0@)">Deserialize(Stream, out T)</h4>
+  <div class="markdown level1 summary"><p>Defines how the downloaded data is deserialized. This function will be called on the Unity main
+thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Deserialize(Stream data, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The downloaded data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The deserialized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether the object was deserialized successfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_DeserializeAsync_" data-uid="Holoride.ElasticSDK.TileDataService`1.DeserializeAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_DeserializeAsync_System_Byte____0__" data-uid="Holoride.ElasticSDK.TileDataService`1.DeserializeAsync(System.Byte[],`0@)">DeserializeAsync(byte[], out T)</h4>
+  <div class="markdown level1 summary"><p>Defines how the downloaded data is deserialized. This function is an alternative to the Deserialize
+function and will be called in an extra thread. Therefore, it is not applicable for Unity objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool DeserializeAsync(byte[] data, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The downloaded data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The deserialized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether the object was deserialized successfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_DeserializeAsync_" data-uid="Holoride.ElasticSDK.TileDataService`1.DeserializeAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_DeserializeAsync_System_IO_Stream__0__" data-uid="Holoride.ElasticSDK.TileDataService`1.DeserializeAsync(System.IO.Stream,`0@)">DeserializeAsync(Stream, out T)</h4>
+  <div class="markdown level1 summary"><p>Defines how the downloaded data is deserialized. This function is an alternative to the Deserialize
+function and will be called in an extra thread. Therefore, it is not applicable for Unity objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool DeserializeAsync(Stream data, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The downloaded data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The deserialized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether the object was deserialized successfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_GetFileName_" data-uid="Holoride.ElasticSDK.TileDataService`1.GetFileName*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_GetFileName_System_Int32_UnityEngine_Vector2Int_" data-uid="Holoride.ElasticSDK.TileDataService`1.GetFileName(System.Int32,UnityEngine.Vector2Int)">GetFileName(int, Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>The file name based on a given tile position and zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string GetFileName(int zoomLevel, Vector2Int tilePos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td><p>The zoom level the tile position refers to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">tilePos</span></td>
+        <td><p>The tile position of the tile which should get downloaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_GetWebRequest_" data-uid="Holoride.ElasticSDK.TileDataService`1.GetWebRequest*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_GetWebRequest_System_Int32_UnityEngine_Vector2Int_System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.TileDataService`1.GetWebRequest(System.Int32,UnityEngine.Vector2Int,System.Threading.CancellationToken)">GetWebRequest(int, Vector2Int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The download URL based on a given tile position and zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract UniTask&lt;Func&lt;UnityWebRequest&gt;&gt; GetWebRequest(int zoomLevel, Vector2Int tilePos, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td><p>The zoom level the tile position refers to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">tilePos</span></td>
+        <td><p>The tile position of the tile which should get downloaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask&lt;T&gt;</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.html">UnityWebRequest</a>&gt;&gt;</td>
+        <td><p>The download url.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_PrepareTileData_" data-uid="Holoride.ElasticSDK.TileDataService`1.PrepareTileData*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_PrepareTileData_System_Int32_UnityEngine_Vector2Int_System_IProgress_System_Single__System_Threading_CancellationToken_System_String_System_Boolean_" data-uid="Holoride.ElasticSDK.TileDataService`1.PrepareTileData(System.Int32,UnityEngine.Vector2Int,System.IProgress{System.Single},System.Threading.CancellationToken,System.String,System.Boolean)">PrepareTileData(int, Vector2Int, IProgress&lt;float&gt;, CancellationToken, string, bool)</h4>
+  <div class="markdown level1 summary"><p>This only exists for Elastic SDK tests; it will go a way in a future refactor. Do not override this method
+outside of tests. It is only visible to all sub-classes due to C# limitations, not by design.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;LoadResourceResult&gt; PrepareTileData(int zoomLevel, Vector2Int tilePos, IProgress&lt;float&gt; onProgressUpdate, CancellationToken cancellationToken, string fileName, bool retryUntilDownloadedSucceeded = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">tilePos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">onProgressUpdate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">retryUntilDownloadedSucceeded</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Holoride.ElasticSDK.LoadResourceResult.html">LoadResourceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_TileDataService_1_RequestMapTileDataAsync_" data-uid="Holoride.ElasticSDK.TileDataService`1.RequestMapTileDataAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_TileDataService_1_RequestMapTileDataAsync_System_Int32_UnityEngine_Vector2Int_System_Action__0__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.TileDataService`1.RequestMapTileDataAsync(System.Int32,UnityEngine.Vector2Int,System.Action{`0},System.Threading.CancellationToken)">RequestMapTileDataAsync(int, Vector2Int, Action&lt;T&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask RequestMapTileDataAsync(int zoomLevel, Vector2Int tilePos, Action&lt;T&gt; onTileLoaded, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">tilePos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">onTileLoaded</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Holoride.ElasticSDK.ITileDataService-1.html">ITileDataService&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Holoride.ElasticSDK.ITileDataProvider-1.html">ITileDataProvider&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to create a Custom Node | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to create a Custom Node | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  <meta property="docfx:rel" content="../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-create-a-custom-node">How to create a Custom Node</h1>
+
+<p><code>Intermediate | 30 mins | Programmers</code></p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="goal">Goal</h3>
+<p>In this tutorial we will learn how to create a custom node with inputs and outputs for the node graph.</p>
+<p><img src="../../attachments/img/screenshots/How-To/custom_node/03_summary_node_connected.png" alt="custom node in action"></p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Familiarity with the node graph</li>
+</ul>
+<h3 id="learning-path">Learning Path</h3>
+<ul>
+<li><a href="#how-to-create-a-custom-node">How to create a Custom Node</a>
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#goal">Goal</a></li>
+<li><a href="#prerequisite">Prerequisite</a></li>
+<li><a href="#learning-path">Learning Path</a></li>
+</ul>
+</li>
+<li><a href="#content">Content</a>
+<ul>
+<li><a href="#creating-a-basic-custom-node">Creating a basic custom node</a></li>
+<li><a href="#adding-fields-and-input-ports">Adding fields and input ports</a></li>
+<li><a href="#data-processing">Data Processing</a></li>
+<li><a href="#data-processing-lifecycle">Data Processing Lifecycle</a></li>
+<li><a href="#accessing-inputs-and-outputs">Accessing inputs and outputs</a></li>
+</ul>
+</li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="content">Content</h2>
+<p>We start by defining our own node and add fields together with input ports.
+Later we show how this input data can be used to compute the output of the node by using a worker.</p>
+<h3 id="creating-a-basic-custom-node">Creating a basic custom node</h3>
+<p>We create a new C# script using the name of our new node. In this example we will use <em>MyCustomNode</em> as the new node type.<br>
+In order to appear in the node graph we need to inherit from <code>Holoride.ElasticSDK.Graph.Node&lt;T&gt;</code> where T is the returned data type which is by our convention the node type itself.</p>
+<pre><code class="lang-csharp">public class MyCustomNode : Node&lt;MyCustomNode&gt;
+{
+}
+</code></pre>
+<p>This snippet will create a new node category based on your new type.<br>
+Note that to extend existing node types you can make your new class inherit either <code>MapNode</code>, <code>SpawnerNode</code> or <code>PoseSetNode</code>. (requires knowledge from later sections)</p>
+<p>Completing this step will allow you to create a new node from the context menu of the node graph.</p>
+<p><img src="../../attachments/img/screenshots/How-To/custom_node/01_node_empty.png" alt=""></p>
+<h3 id="adding-fields-and-input-ports">Adding fields and input ports</h3>
+<p>Next, we will see how we can add ports and fields to the newly created node.</p>
+<pre><code class="lang-csharp">[Input]
+public MyCustomNode MandatoryInput;
+
+[Input(optional:true)]
+public MapNode OptionalMapInput;
+
+public float Size;
+</code></pre>
+<p>This snipped shows that we can declare input fields simply by adding a serialized field, in this case simply by making it public.
+In case our input should be another node we can declare a variable with the type of the node and add the <code>Input</code> attribute, even with some additional parameters.</p>
+<p><img src="../../attachments/img/screenshots/How-To/custom_node/02_node_with_parameters.png" alt=""></p>
+<p>Well done, we now have a node that accepts other nodes and parameters as input.
+The next step is looking under the hood how data processing works.</p>
+<h3 id="data-processing">Data Processing</h3>
+<p>To calculate the output from the incoming data and make it available to the connected node, we create a worker that performs the data processing.</p>
+<p>There are two steps involved:</p>
+<ol>
+<li>Implement a worker using the <code>PipelineWorkerBase</code> as a convenient base class, or for even more manual control, use the <code>IPipelineWorker</code> interface.</li>
+<li>Implement the <code>IPipelineNode</code> interface on the new custom node and generate a new worker in the <code>GeneratePipelineWorker</code> interface method.</li>
+</ol>
+<pre><code class="lang-csharp">public class MyCustomNode : Node&lt;MyCustomNode&gt;, IPipelineNode
+{
+    /// [...] Variables omitted for brevity
+
+    public IPipelineWorker GeneratePipelineWorker()
+    {
+        return new MyCustomPipelineWorker(this);
+    }
+}
+
+public class MyCustomPipelineWorker : PipelineWorkerBase
+{
+    private MyCustomNode Node;
+
+    public MyCustomPipelineWorker(MyCustomNode node)
+    {
+        Node = node;
+    }
+
+    // [...] PipelineWorkerBase methods omitted for brevity
+}
+</code></pre>
+<p>The snippet above shows the implementation of the <code>IPipelineNode</code> interface and the creation of the worker based on this node.<br>
+We pass the node to its worker in the constructor to make the node data accessible.<br>
+The worker itself is based on the <code>PipelineWorkerBase</code> which already provides a lot of the world information.
+This information includes the current world boundaries which, for example, is needed when generating terrain or spawning objects.</p>
+<h3 id="data-processing-lifecycle">Data Processing Lifecycle</h3>
+<p>Now that we have an overview on how the node and worker interact we can have a deeper look into the worker.</p>
+<pre><code class="lang-csharp">public class MyCustomPipelineWorker : PipelineWorkerBase
+{
+    // [...] Omitted
+
+    public float OutputField;
+
+    public override void CallInitResources() {}
+
+    public override void CallInit() {}
+
+    public override UniTask&lt;LoadResourceResult&gt; CallGatherResourcesAsync(GenerationContext context, Action&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)
+    {
+        return null;
+    }
+
+    public override UniTask CallProcessAsync(GenerationContext context, Action&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)
+    {
+        return null;
+    }
+
+    public override void CallCleanUp() {}
+}
+</code></pre>
+<p>The snippet above shows methods originating from the <code>PipelineWorkerBase</code> and will be executed during the generation process based on the following order:</p>
+<ol>
+<li>CallInitResources <a class="xref" href="../../api/Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallInitResources">🔗</a></li>
+<li>CallInit <a class="xref" href="../../api/Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallInit">🔗</a></li>
+<li>Generation Loop:
+<ol>
+<li>CallGatherResourcesAsync <a class="xref" href="../../api/Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallGatherResourcesAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_">🔗</a></li>
+<li>CallProcessAsync <a class="xref" href="../../api/Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallProcessAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_">🔗</a></li>
+</ol>
+</li>
+<li>CallCleanUp <a class="xref" href="../../api/Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallCleanUp">🔗</a></li>
+</ol>
+<p>As probably expected we offer initialization and clean up methods before and after the update loop. In the update loop we acquire the required data for the current area of the world and then process it based on the node functionality.</p>
+<p>One interesting separation can be seen in the resource and non resource based methods.
+The <code>InitResources</code> and <code>GatherResources</code> methods should be able to run on their own, for example generate a cache by downloading the necessary data.
+This is conceptually different from the non resource based methods that use the data the resource methods provide during gameplay.
+An example for this would be to spawn objects or generate terrain from maps.</p>
+<p>With our new understanding of the methods the worker provides, we can now have a look at reading data from other nodes and calculating our own output data.</p>
+<h3 id="accessing-inputs-and-outputs">Accessing inputs and outputs</h3>
+<p>Since the initialization and gathering of resources is very node specific
+we can focus more on the interaction between nodes.</p>
+<p>Generally speaking we can use the <code>GetInput</code> method in the worker of this node together with the name of the port as the parameter to access connected workers.
+For our <code>MyCustomNode</code> we can get the map data from the <em>OptionalMapInput</em> port or the MyCustomNode connected to the <em>MandatoryInput</em> port using this method.</p>
+<pre><code class="lang-csharp">var myCustomWorker = this.GetInput&lt;MyCustomPipelineWorker&gt;(nameof(MyCustomNode.MandatoryInput));
+
+var mapWorker = this.GetInput&lt;MapWorker&gt;(nameof(MyCustomNode.OptionalMapInput));
+</code></pre>
+<p>This example shows that we can get a reference to the connected workers, by calling the <code>GetInput</code> method.</p>
+<pre><code class="lang-csharp">MyWorkerOutput = myCustomWorker.MyWorkerOutput * 2;
+
+var myPosition = new GlobalPosition(Vector3.zero);
+mapWorker.GetCPUReadBufferValueInterpolated(myPosition);
+</code></pre>
+<p>We can now access the methods and fields of the connected workers.
+For example, reading the value from a map similar to the snippet above, is used by spawners to set the y position for the newly spawned objects.</p>
+<h2 id="summary">Summary</h2>
+<p><img src="../../attachments/img/screenshots/How-To/custom_node/03_summary_node_connected.png" alt=""></p>
+<p>We started this journey by creating our custom node for the graph editor together with different input ports and a field.
+We then explored the inner workings of the node by looking at its worker, which performs the gathering of data and processing for each area that needs to be generated.
+In the end we also learned how to access data from other nodes and the need to store our result in a public field so other nodes can access it once processing is done.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GenerationContext
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GenerationContext
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.GenerationContext">
+
+
+  <h1 id="Holoride_ElasticSDK_GenerationContext" data-uid="Holoride.ElasticSDK.GenerationContext" class="text-break">Class GenerationContext
+</h1>
+  <div class="markdown level0 summary"><p>Contains the immutable meta-information of a single update iteration. Will be discarded when the
+update is done but can be kept by functions that need information about former iterations - such as
+async operations that may last longer than an update period.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Holoride.ElasticSDK.ExtensibleObject-1.html">ExtensibleObject</a>&lt;<a class="xref" href="Holoride.ElasticSDK.IGenerationContext.html">IGenerationContext</a>&gt;</div>
+    <div class="level2"><span class="xref">GenerationContext</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.ExtensibleObject-1.html#Holoride_ElasticSDK_ExtensibleObject_1_Extensions">ExtensibleObject&lt;IGenerationContext&gt;.Extensions</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.ExtensibleObject-1.html#Holoride_ElasticSDK_ExtensibleObject_1_SetExtension__0_">ExtensibleObject&lt;IGenerationContext&gt;.SetExtension(IGenerationContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.ExtensibleObject-1.html#Holoride_ElasticSDK_ExtensibleObject_1_GetExtension__1">ExtensibleObject&lt;IGenerationContext&gt;.GetExtension&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.ExtensibleObject-1.html#Holoride_ElasticSDK_ExtensibleObject_1_TryGetExtension__1___0__">ExtensibleObject&lt;IGenerationContext&gt;.TryGetExtension&lt;T&gt;(out T)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_GenerationContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GenerationContext : ExtensibleObject&lt;IGenerationContext&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GenerationContext__ctor_" data-uid="Holoride.ElasticSDK.GenerationContext.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_GenerationContext__ctor_Holoride_ElasticSDK_GlobalPosition_Holoride_ElasticSDK_GeoCoordinate_Holoride_ElasticSDK_GenerationSettings_" data-uid="Holoride.ElasticSDK.GenerationContext.#ctor(Holoride.ElasticSDK.GlobalPosition,Holoride.ElasticSDK.GeoCoordinate,Holoride.ElasticSDK.GenerationSettings)">GenerationContext(GlobalPosition, GeoCoordinate, GenerationSettings)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a GenerationContext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerationContext(GlobalPosition generationOrigin, GeoCoordinate pivot, GenerationSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">generationOrigin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot GeoCoordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationSettings.html">GenerationSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_GenerationContext_Bounds" data-uid="Holoride.ElasticSDK.GenerationContext.Bounds">Bounds</h4>
+  <div class="markdown level1 summary"><p>The current terrain aligned bounds not respecting the blend margin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GlobalBounds Bounds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GenerationContext_InnerBounds" data-uid="Holoride.ElasticSDK.GenerationContext.InnerBounds">InnerBounds</h4>
+  <div class="markdown level1 summary"><p>The current terrain aligned bounds respecting the blend margin.
+Use this for processes that require consistent Map data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GlobalBounds InnerBounds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GenerationContext_Pivot" data-uid="Holoride.ElasticSDK.GenerationContext.Pivot">Pivot</h4>
+  <div class="markdown level1 summary"><p>The pivot GeoCoordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GeoCoordinate Pivot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GenerationContext_Settings" data-uid="Holoride.ElasticSDK.GenerationContext.Settings">Settings</h4>
+  <div class="markdown level1 summary"><p>The Generation Settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GenerationSettings Settings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationSettings.html">GenerationSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GenerationContext_WorkersWithoutResources" data-uid="Holoride.ElasticSDK.GenerationContext.WorkersWithoutResources">WorkersWithoutResources</h4>
+  <div class="markdown level1 summary"><p>The set of workers that failed to acquire some of their required resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly ISet&lt;IPipelineWorker&gt; WorkersWithoutResources</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html">IPipelineWorker</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GenerationContext_GatherAllResourcesAsync_" data-uid="Holoride.ElasticSDK.GenerationContext.GatherAllResourcesAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_GenerationContext_GatherAllResourcesAsync_Holoride_ElasticSDK_GenerationSettings_System_IProgress_System_Single__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.GenerationContext.GatherAllResourcesAsync(Holoride.ElasticSDK.GenerationSettings,System.IProgress{System.Single},System.Threading.CancellationToken)">GatherAllResourcesAsync(GenerationSettings, IProgress&lt;float&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Performs the resource gathering step for all registered <a class="xref" href="Holoride.ElasticSDK.IPreprocessingGenerationContext.html">IPreprocessingGenerationContext</a>
+instances registered with this context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask GatherAllResourcesAsync(GenerationSettings settings, IProgress&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationSettings.html">GenerationSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Contains immutable data that cannot be changed during the whole generation loop.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">onProgressUpdate</span></td>
+        <td><p>Called with relative progress in [0, 1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GenerationContext_ProcessAllAsync_" data-uid="Holoride.ElasticSDK.GenerationContext.ProcessAllAsync*"></a>
+  <h4 id="Holoride_ElasticSDK_GenerationContext_ProcessAllAsync_Holoride_ElasticSDK_GenerationSettings_System_IProgress_System_Single__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.GenerationContext.ProcessAllAsync(Holoride.ElasticSDK.GenerationSettings,System.IProgress{System.Single},System.Threading.CancellationToken)">ProcessAllAsync(GenerationSettings, IProgress&lt;float&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Performs the processing step for all registered <a class="xref" href="Holoride.ElasticSDK.IPreprocessingGenerationContext.html">IPreprocessingGenerationContext</a>
+instances registered with this context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask ProcessAllAsync(GenerationSettings settings, IProgress&lt;float&gt; onProgressUpdate = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GenerationSettings.html">GenerationSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>Contains immutable data that cannot be changed during the whole generation loop.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">onProgressUpdate</span></td>
+        <td><p>Called with relative progress in [0, 1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

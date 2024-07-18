@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Vehicle Motion | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Vehicle Motion | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  <meta property="docfx:rel" content="../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="vehicle-motion">Vehicle Motion</h2>
+
+<p>When the user puts on their headset they enter a virtual reality, but the forces applied to them persist. It is therefore essential to provide adequate visual feedback by depicting what the user feels. Knowing that the virtual camera rig is controlled by both user head motion and car sensors, we’re able to create a virtual vehicle around the camera rig while also utilizing the cockpit for the application at hand. The interface can consist of 3D objects and 2D layers and can either be rigidly controlled by the car’s sensors or float around it in a playful manner.</p>
+<h3 id="holorideplayer-prefab">HoloridePlayer Prefab</h3>
+<p>For easy integration, the Elastic SDK provides a HoloridePlayer Prefab for Unity3D that is controlled by the car’s sensors and moved through the elastic experience. As a child transform, the camera rig is carried on top, adding the current head rotation to the mix. Decorating objects or user interfaces can be attached to either of them. In addition, the sensor data can be accessed at any time. It can serve as a constantly updating parameter to emphasize the visual feedback to velocity, acceleration, and rotation provided by affecting particles, loose objects, or moving characters. It’s even possible to exaggerate the whole vehicle’s motion to imitate a jet that leans into the bend, or a sailboat that is dragged in the opposite direction—an effect that can be achieved using our Floating Platform component.</p>
+<p>It can be instantiated from a prefab via the Create menu <strong>holoride &gt; Player</strong>.</p>
+<p><img src="../../attachments/img/screenshots/esdk_core_player_context_menu.png" alt=""></p>
+<p>The prefab provides three child objects - FloatingPlatform, LocalRotation, and GlobalRotation - each with different rotation behavior.</p>
+<h4 id="floatingplatform">FloatingPlatform</h4>
+<p>The FloatingPlatform uses movement and all rotation axes of the vehicle.
+Placing a cockpit model here and adjusting the associated curves in the editor will give the feeling of banking, when the real-world vehicle turns.
+With these curves, we can also emphasize acceleration or braking forces of the vehicle.</p>
+<h4 id="localrotation">LocalRotation</h4>
+<p>In contrast to the FloatingPlatform, it only consists of movement and yaw rotation of the vehicle, but no roll and pitch rotation.
+Content moves as if attached to the vehicle.
+This means that the content uses the local coordinate system of the vehicle.</p>
+<p><strong>Note:</strong> For testing at your desk, place the main camera or camera rig here.</p>
+<h4 id="globalrotation">GlobalRotation</h4>
+<p>Content is aligned to the global coordinate system (i.e. relative to the world reference frame in Unity).
+This means that, when the vehicle turns the content does not turn with it.
+Place any persistent background objects here, such as mountains or hills.</p>
+<p><strong>Note:</strong> For testing in a moving vehicle, place the main camera or camera rig here.</p>
+<h3 id="changing-between-desk-and-vehicle-configurations">Changing between “Desk” and “Vehicle” Configurations</h3>
+<p>When switching between testing at your desk and testing in the vehicle, the configuration of the HoloridePlayer object must be changed depending on the testing scenario. It must be made sure that the configuration of the parenting inside the HoloridePlayer object is set correctly.</p>
+<p><img src="../../attachments/img/screenshots/esdk_core_player_hierarchy.png" alt=""></p>
+<p>The two child game objects within the HoloridePlayer that impact how the camera rotates in relation to world space and vehicle changes are LocalRotation and GlobalRotation.</p>
+<p>Put your MainCamera into GlobalRotation before you hop into a car and try it out.
+Putting the MainCamera into LocalRotation is a convenience feature for testing at your desk.</p>
+<p>Childing the MainCamera under the GlobalRotation object prevents “rotating away” as the vehicle travels in real-world space when the real-world vehicle turns.</p>
+<h3 id="vehicle-data-sources--state-receiver">Vehicle Data Sources / State Receiver</h3>
+<p>There are three ways to move the holoride Player object within the scene that differ depending on the source of the vehicle's motion path. Sources may be a live data stream of a car's sensors, a file that is a recording of such a stream, and a simulation based on a calculated route chosen by the developer. Depending on the testing stage of your development efforts, choosing the right testing setup is a matter of using the correct corresponding component.</p>
+<p>Data sources are made available by State Receiver Backends through the singular <strong>StateReceiver</strong>. This auto-generated ScriptableObject asset contains all configuration for available sources. Here you can also configure which source to use in the editor and in builds (standalone). This can be useful when testing with replays, but using live data in builds.</p>
+<p><img src="../../attachments/img/screenshots/esdk_core_statereceiver_asset.png" alt=""></p>
+<p>You can configure the <strong>StateReceiver</strong> either by selecting the asset or in the holoride Project Settings category.</p>
+<h4 id="replays">Replays</h4>
+<p>The <strong>ReplayStateReceiverBackend</strong> plays back recorded or implicit playback data.</p>
+<p>Replays are typically based on recorded .holo and .holo2 files. These file types contain the recorded motion data of real-world travel in a car. You can download a pack of files recorded by holoride <a href="/010-Create/020-Elastic-Content/060-Elastic-SDK-Testing.md">here</a>.
+A default replay over the full length of the recording will be automatically created for each imported .holo and .holo2 file.</p>
+<p>It is possible to create further replays representing different time slices of the recordings.</p>
+<p>You can also record your own drives using the <strong>StateRecorder</strong> component (detailed description further below).</p>
+<p>Alternatively, <strong>Route</strong> assets can be used as a source for synthetic rides, with a subset of possible sensory data. A common source for such routes are .kml files and the <strong>RouteFromAddresses</strong> component. This is similar to using the <strong>RouteTraveller</strong> component (see below).</p>
+<p>As with .holo and .holo2 files, multiple replays over varying time slices can be created based on the same route.</p>
+<p>To use the <strong>ReplayStateReceiverBackend</strong>:</p>
+<ul>
+<li>select it in the <strong>StateReceiver</strong> for the context to use it in (editor and/or standalone).</li>
+<li>add a replay, e.g. of a .holo recording (<strong>holofile</strong>) to the <strong>Replay</strong> field in the inspector.</li>
+</ul>
+<h4 id="service">Service</h4>
+<p>The <strong>ServiceStateReceiverBackend</strong> receives live data from the holoride DevKit or a supported vehicle.</p>
+<p>To use the <strong>ServiceStateReceiverBackend</strong>:</p>
+<ul>
+<li>select it in the <strong>StateReceiver</strong> for the standalone context.</li>
+<li>unless requiring the extra control to connect via script at a custom point during initialization, keep the checkboxes for automatic initialization ticked.</li>
+</ul>
+<h4 id="routetraveller">RouteTraveller</h4>
+<p>The <strong>RouteTraveller</strong> is an alternative to using the <strong>Player</strong> (which uses the <strong>StateReceiver</strong>). It does not use or provide real motion data, but simply moves a GameObject along a predefined route with constant velocity. It also does not simulate any pitch and roll forces which can tilt/bank the virtual cockpit when accelerating, braking, or turning.</p>
+<p>The big advantage is that you can simulate any kind of route on the planet.</p>
+<p>To use the <strong>RouteTraveller</strong> setup, you need to do the following:</p>
+<ol>
+<li><p>Create a route object in your hierarchy. (Right click in the <strong>Hierarchy</strong> and select <em>Holoride-&gt;Route</em>)</p>
+</li>
+<li><p>Add the addresses for desired use in the Addresses field of the <strong>RouteFromAddresses</strong> component within the inspector menu of the newly generated route object. Please note we are using the external <em>Nominatim</em> web service for this functionality. Alternatively, it is also possible to use latitude/longitude coordinates.</p>
+</li>
+</ol>
+<p><img src="../../attachments/img/screenshots/esdk_core_routefromaddresses.png" alt=""></p>
+<ol start="3">
+<li>Click on “Request Route” on the RouteFromAddresses component. This will generate a route spline in the scene.</li>
+</ol>
+<p><img src="../../attachments/img/screenshots/esdk_core_request_route.png" alt=""></p>
+<ol start="4">
+<li>Now you can add the <strong>RouteTraveller</strong> Script wherever you want in the scene and link the generated route as well as the GameObject to move along the route.</li>
+</ol>
+<p>Please make sure that <strong>MoveGameObject</strong> is set to true. This will enable <strong>RouteTraveller</strong> to move the GameObject. The speed at which the GameObject object travels through 3D space can be adjusted by increasing the value within the Speed field.</p>
+<p><img src="../../attachments/img/screenshots/esdk_core_route_traveller.png" alt=""></p>
+<p>When using the <strong>RouteTraveller</strong>, be sure to reference its <strong>SharedGeoCoordinate</strong> in the <strong>ElasticSceneGenerator</strong> and avoid using a <strong>Player</strong> component (e.g. the <strong>HoloridePlayer</strong> prefab) at the same time.</p>
+<h4 id="staterecorder-recording-data-in-the-moving-vehicle">StateRecorder (Recording data in the moving vehicle)</h4>
+<p>In order to record your data at runtime, add the <strong>StateRecorder</strong> component and link the StateReceiver being used.
+The recording is automatically stopped when the component is disabled or the game stops.
+The recording is stored in a file located in <strong>persistent data path</strong> <code>/Holoride/Recordings</code> and may be replayed using the <strong>FileStateReceiver</strong>.</p>
+<p>More regarding the <strong>persistent data path</strong> in the Unity documentation:
+<a href="https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html">https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html</a></p>
+<p><img src="../../attachments/img/screenshots/esdk_core_staterecorder.png" alt=""></p>
+<h4 id="recent-changes">Recent Changes</h4>
+<p>Starting with version 0.16.0, the way State Receivers are presented has changed to more closely match their actual behavior and typically desired use. In earlier versions, State Receivers were presented as Unity components. This architecture was chosen to allow scene-specific event listeners via the inspector. However, State Receivers typically should not reset between scene changes. This required some potentially fragile workarounds internally. More importantly, it made setup more complicated for users than necessary. To ease configuration and reinforce the singular existence of State Receivers, they are now presented as a single ScriptableObject. Here all available State Receivers can be configured in one place. An additional quality of life improvement is the added option to select which receiver to use in the editor as opposed to in builds. This allows users to use some kind of replay in the editor and real data in builds, without needing to change their setup.</p>
+<p>State Receiver implementations have also been renamed slightly:</p>
+<ul>
+<li>the <strong>FileStateReceiver</strong> is now replaced by the <strong>ReplayStateReceiverBackend</strong>. Its scope has been broadened to support any kind of <strong>Replay</strong>, not just .holo and .holo2 files.</li>
+<li>the <strong>HolorideStateReceiver</strong> is now replaced by the <strong>ServiceStateReceiverBackend</strong> to be more specific. It receives data from our service when running on Android, for example.</li>
+</ul>
+<h3 id="recentering--synchronizing-the-headset-forward-with-vehicle-forward">Recentering – Synchronizing the Headset “Forward” with Vehicle “Forward”</h3>
+<h4 id="implementation">Implementation</h4>
+<p>To perform a vehicle recenter, the developer must call the <strong>Recenter()</strong> method on the holoride <strong>Player</strong> component. In code, using <strong>FindObjectOfType</strong> for demonstration purposes, this may look like this:</p>
+<pre><code class="lang-c#">UnityEngine.Object.FindObjectOfType&lt;Holoride.ElasticSDK.Player&gt;().Recenter();
+</code></pre>
+<p>At this time there exist only vendor-specific methods for detecting recenter events. In the future, we plan to provide a generic drop-in solution for this task. However, for now it is the responsibility of the developer to call this method when the headset is recentered.</p>
+<p>More information <a href="../System-Information/Vehicle-Localization-and-Headset-Tracking.html">here</a>.</p>
+<h3 id="shifting-algorithm--floating-point-precision-challenge-in-the-game-engine">Shifting Algorithm / Floating-Point Precision Challenge in the Game Engine</h3>
+<h4 id="floating-point-challenge-explained">Floating-Point Challenge Explained</h4>
+<p>The game engine’s coordinate space was initially not designed to be used with vast distances traveled by a vehicle (i.e., many kilometers/miles, ten thousands of units in the game engine).
+The x/y/z coordinates are float32 values and therefore have limited precision for smaller distances when large values are present (i.e., all the precision is consumed by the digits in front of the floating point, so that digits after the decimal point are limited). This causes position jittering when objects / the player is far away from the origin of the coordinate system.</p>
+<h4 id="general-solutions">General Solutions</h4>
+<p>First of all, the Elastic SDK is calculating every coordinate in double precision (64 bit) internally to ensure no errors are induced.
+Furthermore, the Elastic SDK provides a shifting algorithm to shift everything in the scene once the player traveled a certain distance from the origin of the coordinate system.</p>
+<h4 id="worldshiftmanager">WorldShiftManager</h4>
+<p>In order to keep objects close to Unity’s origin, all objects need to be shifted from time to time. The WorldShiftManager is the central place to manage all individual shifts. It will fire automatically as soon as the attached Player’s distance gets larger than the ShiftThreshold. Disabling this component pauses the process, which might be helpful in computationally heavy situations or if certain game objects, tiled textures, or shaders don’t shift as expected.</p>
+<p>By default, the player itself is shifted. The ShiftParents list can contain any additional number of transforms that are parent to objects that should be shifted individually. Note that it is not sufficient to move only a parent transform if the individual child’s coordinates keep growing.
+Furthermore, an OnOriginShift callback is fired that passes the shift vector as an argument to be used by custom components or repeating textures.</p>
+<p><img src="../../attachments/img/screenshots/esdk_core_world_shift_manager.png" alt=""></p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

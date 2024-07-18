@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Distances &amp; Heights | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Distances &amp; Heights | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<script type="text/javascript" src="../../../World-Creation/Elastic-Terrain-Introduction/showcase-charts-add-multiply.js" defer=""></script>
+<div class="button-container">
+    <div class="align-left">
+        <a href="../Elastic-Terrain-Introduction.html" class="button button--text">&#10094; Elastic Terrain: Introduction</a>
+    </div>
+    <div class="align-right">
+        <a href="Remap-The-Multi-Purpose-Tool.html" class="button button--text">Remap - The Multi-Purpose Tool &#10095;</a>
+    </div>
+</div>
+<hr class="rounded">
+<h2 id="distances--heights">Distances &amp; Heights</h2>
+<p>For elastic content creation it is important that you assemble a proper correlation between real-world localization data
+and environment features of the virtual world. While there are many ways to design such environment features, there are
+a handful of principles in the Elastic Graph system that will make it inherently easier to assemble said correlations
+towards real-world data.</p>
+<p>Two major properties of every elastic environment is the distance towards the road a player is driving on and a height
+that can be derived from such a distance. The essential principle behind this idea is that an elastic environment should
+evolve around the road network, so that the player does not collide with anything, and it should do this in a way so
+that the content creator has a certain amount of control over the procedural composition, i.e. the heightmap, of the
+environment. <br>
+In other words, we compute a heightmap over a certain distance.</p>
+<p>Now, to incorporate this principle we introduce the <a href="../../../manual/Procedural-Generation/Nodes/DistanceTransform.html">Distance Transform node</a>.</p>
+<p><img src="../../../attachments/img/screenshots/World-Creation/Elastic-Terrain-Introduction/Distances-and-Heights/00_Distance_Transform_Showcase.png" alt=""></p>
+<p><img src="../../../attachments/img/screenshots/World-Creation/Elastic-Terrain-Introduction/Distances-and-Heights/Distances_and_Heights_Ditsance_Transform_Example_Scene.png" alt=""></p>
+<p>As seen in the image above, applying a Distance Transform to a Road Network Mask results in a terrain with a lot of
+pyramid-like shapes. That's due to how the Distance Transform works. Per output pixel, it effectively computes the
+distance to the closest non-zero pixel that belongs to the input map, which in this case is the road mask. And since the
+input map has a bunch of square areas that are enclosed by roads, the distance increases towards the center of these
+areas, ultimately resulting in these pyramid-like shapes.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Generally speaking, the value of each pixel is the distance measured between its position and the closest pixel over a threshold in the input image. <br>
+That is, the two dimensional euclidean distance measured in meters.</p>
+</div>
+<p>This is obviously a rather boring composition for a terrain, so let's see what happens when we multiply these distances
+with a <a href="../../../manual/Procedural-Generation/Nodes/PerlinNoise.html">Perlin Noise node</a>.</p>
+<p><img src="../../../attachments/img/screenshots/World-Creation/Elastic-Terrain-Introduction/Distances-and-Heights/01_Distance_Transform_Perlin_Noise_Showcase.png" alt=""></p>
+<p><img src="../../../attachments/img/screenshots/World-Creation/Elastic-Terrain-Introduction/Distances-and-Heights/Distances_and_Heights_Perlin_Noise_Example_Scene.png" alt=""></p>
+<p>Already the resulting terrain has a much more natural appearance with great variation. Hill shapes are defined by the
+noise while their height increases with the distance to the road.</p>
+<h3 id="noise">Noise</h3>
+<p>So what did we actually do to the values of the Distance Transform? <br>
+To understand this, it is important to understand the idea of Noise as well. In the case above, values from a 2D Perlin
+noise are sampled along the generation bounds. Noise, as any other signal, is always defined by three properties:
+Frequency, amplitude and time.</p>
+<p><img src="../../../attachments/img/screenshots/node_perlin_noise.png" alt=""></p>
+<p>Since a Map is effectively an area constrained by the generation bounds, a noise value for each point (or pixel)
+in this area is needed. This is achieved by sampling the 2D noise signal along the vertical and horizontal coordinates
+of the map. The coordinates are in this case a point in time of the noise signal. The frequency of the noise signal is
+defined as <em>1 / Size</em>, while the Size parameter, in a scientific context, would be referred to as the period of the
+signal.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use the Size parameter to adjust the frequency of the noise signal. <br>
+Effectively this will capture a broader area of the 2D Perlin noise function.</p>
+</div>
+<p>Finally, the output the Perlin Noise node generates are the amplitudes of the noise signal. These are the values that we
+multiply with the output of the Distance Transform node to introduce more detail, more variation to the terrain shapes.</p>
+<h3 id="data-modifiers">Data Modifiers</h3>
+<p>Node types of the Elastic SDK that are used to generate and introduce synthetic or real-world data, such as Map or Pose
+nodes, are divided into Sources and Modifiers. &lt;br&gt; While Sources represent an initial set of data, Modifiers are used
+to alter this data.</p>
+<p>For Map nodes, two basic Modifiers are the Add and Multiply nodes. In general, Modifiers will execute a sequence of
+operations on each data point of the input maps. For Add and Multiply, it is a simple addition and a multiplication.
+This means for example every point of data at a specific location on one Map will be added to a value at the same
+location on the second Map. The result is then output in a new Map.</p>
+<p>As we did for the noise example, we can also assume for each Map that we are working with signals. It might be helpful
+to first think in terms of 1D signals similar to audio, that represent a slice of our map. To visualize an example of
+the effects of a Multiply or Add operation on such a signal, we have an interactive graph below. The two input curves
+represent the initial signals (or map slices). Use the knobs on these curves to alter the values the operations execute
+on. You can observe how the amplitudes of the output signals, i.e. the knobs on the output curves, change.</p>
+<div class="chart-container">
+  <canvas id="inputChartElement"></canvas>
+</div> 
+<div class="chart-container">
+  <canvas id="outputChartElement"></canvas>
+</div>
+<div class="button-chart-container">
+    <button class="button button--chart" type="button" onclick="addInputOutputData(inputChart, outputChart)">Add Data</button>
+    <button class="button button--chart" type="button" onclick="removeInputOutputData(inputChart, outputChart)">Remove Data</button>
+    <button class="button button--chart" type="button" onclick="randomizeInputOutput(inputChart, outputChart)">Randomize Input</button>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The top chart is interactive! <br>
+Use the knobs on each curve to adjust the input values for the operations rendered in the bottom chart and observe the resulting curve shapes.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The vertical axis range has changed on the output chart to put the maximum values into perspective.</p>
+</div>
+<p>While these curves are a visual representation of a 1D signal, it should give a good indication how shapes evolve from
+your 2D Maps as well. Remember the Map slice metaphor. <br> Understanding the principle of combining Maps with one
+another is essential for the usage of the Elastic Graph system, so make sure to play around with different input values.</p>
+<hr class="rounded">
+<div class="button-container">
+    <div class="align-left">
+        <a href="../Elastic-Terrain-Introduction.html" class="button button--text">&#10094; Elastic Terrain: Introduction</a>
+    </div>
+    <div class="align-right">
+        <a href="Remap-The-Multi-Purpose-Tool.html" class="button button--text">Remap - The Multi-Purpose Tool &#10095;</a>
+    </div>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

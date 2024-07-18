@@ -1,0 +1,1637 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct GeoCoordinate
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct GeoCoordinate
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.GeoCoordinate">
+
+
+  <h1 id="Holoride_ElasticSDK_GeoCoordinate" data-uid="Holoride.ElasticSDK.GeoCoordinate" class="text-break">Struct GeoCoordinate
+</h1>
+  <div class="markdown level0 summary"><p>Stores latitude, longitude and altitude of a geo coordinate and performs conversion to cartesian.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_GeoCoordinate_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct GeoCoordinate</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate__ctor_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate__ctor_Holoride_ElasticSDK_GlobalPosition_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor(Holoride.ElasticSDK.GlobalPosition,Holoride.ElasticSDK.GeoCoordinate)">GeoCoordinate(GlobalPosition, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a> class from a vector3 unity position
+and a predefined world pivot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoCoordinate(GlobalPosition vector, GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>A double precision vector in Unity coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot of the grid containing the specified position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate__ctor_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate__ctor_System_Double_System_Double_System_Double_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor(System.Double,System.Double,System.Double)">GeoCoordinate(double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoCoordinate(double latitude, double longitude, double altitude = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">latitude</span></td>
+        <td><p>The coordinate's latitude in degrees.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">longitude</span></td>
+        <td><p>The coordinate's longitude in degrees.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">altitude</span></td>
+        <td><p>The coordinate's altitude in meters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate__ctor_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate__ctor_UnityEngine_Vector2_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor(UnityEngine.Vector2,Holoride.ElasticSDK.GeoCoordinate)">GeoCoordinate(Vector2, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a> class from a vector2 unity position
+and a pivot point geoCoordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoCoordinate(Vector2 vector, GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>A unity position vector interpreted as NED.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot point geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate__ctor_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate__ctor_UnityEngine_Vector3_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.#ctor(UnityEngine.Vector3,Holoride.ElasticSDK.GeoCoordinate)">GeoCoordinate(Vector3, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a> class from a vector3 unity position
+and a pivot point geoCoordinate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoCoordinate(Vector3 vector, GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>A unity position vector interpreted as NED.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot point geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_Altitude" data-uid="Holoride.ElasticSDK.GeoCoordinate.Altitude">Altitude</h4>
+  <div class="markdown level1 summary"><p>The coordinate's altitude in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Altitude</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_Latitude" data-uid="Holoride.ElasticSDK.GeoCoordinate.Latitude">Latitude</h4>
+  <div class="markdown level1 summary"><p>The coordinate's latitude in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Latitude</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_Longitude" data-uid="Holoride.ElasticSDK.GeoCoordinate.Longitude">Longitude</h4>
+  <div class="markdown level1 summary"><p>The coordinate's longitude in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Longitude</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_MajorEarthRadius" data-uid="Holoride.ElasticSDK.GeoCoordinate.MajorEarthRadius">MajorEarthRadius</h4>
+  <div class="markdown level1 summary"><p>The earth radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MajorEarthRadius</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_AzimuthTo_" data-uid="Holoride.ElasticSDK.GeoCoordinate.AzimuthTo*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_AzimuthTo_Holoride_ElasticSDK_GeoCoordinate_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.AzimuthTo(Holoride.ElasticSDK.GeoCoordinate,Holoride.ElasticSDK.GeoCoordinate)">AzimuthTo(GeoCoordinate, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Calculates the azimuth, i.e. horizontal angle measured clockwise by degrees between the north and the direction
+towards the target location starting from the passed start location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double AzimuthTo(GeoCoordinate start, GeoCoordinate target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The location from which the azimuth will be calculated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The location to which the azimuth will be calculated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The angle in degrees between north and the direction towards the passed target as seen from the passed start location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_AzimuthTo_" data-uid="Holoride.ElasticSDK.GeoCoordinate.AzimuthTo*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_AzimuthTo_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.AzimuthTo(Holoride.ElasticSDK.GeoCoordinate)">AzimuthTo(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Calculates the azimuth, i.e. horizontal angle measured clockwise by degrees between north and the direction
+towards the target location starting from the this location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double AzimuthTo(GeoCoordinate target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The location to which the azimuth will be calculated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The angle in degrees between north and the direction towards the passed target as seen from this location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_Equals_" data-uid="Holoride.ElasticSDK.GeoCoordinate.Equals*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_Equals_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.Equals(Holoride.ElasticSDK.GeoCoordinate)">Equals(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(GeoCoordinate other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the current object is equal to the <code data-dev-comment-type="paramref" class="paramref">other</code> parameter; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_Equals_" data-uid="Holoride.ElasticSDK.GeoCoordinate.Equals*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_Equals_System_Object_" data-uid="Holoride.ElasticSDK.GeoCoordinate.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the specified object is equal to the current object; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals#system-valuetype-equals(system-object)">ValueType.Equals(Object)</a></div>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_GetHashCode_" data-uid="Holoride.ElasticSDK.GeoCoordinate.GetHashCode*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_GetHashCode" data-uid="Holoride.ElasticSDK.GeoCoordinate.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A hash code for the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode#system-valuetype-gethashcode">ValueType.GetHashCode()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_HaversineDistance_" data-uid="Holoride.ElasticSDK.GeoCoordinate.HaversineDistance*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_HaversineDistance_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.HaversineDistance(Holoride.ElasticSDK.GeoCoordinate)">HaversineDistance(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Returns the shortest distance between two GeoCoordinates on the earth in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double HaversineDistance(GeoCoordinate to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The distance of this location to the passed location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The shortest distance between the two locations on the earth in meters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_LatitudeToYTile_" data-uid="Holoride.ElasticSDK.GeoCoordinate.LatitudeToYTile*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_LatitudeToYTile_System_Double_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.LatitudeToYTile(System.Double,System.Int32)">LatitudeToYTile(double, int)</h4>
+  <div class="markdown level1 summary"><p>Calculates the tile coordinate for a given latitude and a zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double LatitudeToYTile(double latitude, int zoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">latitude</span></td>
+        <td><p>The latitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The tile value of a latitude.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_LLHToXYZ_" data-uid="Holoride.ElasticSDK.GeoCoordinate.LLHToXYZ*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_LLHToXYZ_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.LLHToXYZ(Holoride.ElasticSDK.GeoCoordinate)">LLHToXYZ(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Transforms geoCoordinates to ECEF (WGS84) cartesian coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalPosition LLHToXYZ(GeoCoordinate geoCoordinate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">geoCoordinate</span></td>
+        <td><p>The geoCoordinate to transform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The ECEF (WGS84) cartesian coordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_LongitudeToXTile_" data-uid="Holoride.ElasticSDK.GeoCoordinate.LongitudeToXTile*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_LongitudeToXTile_System_Double_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.LongitudeToXTile(System.Double,System.Int32)">LongitudeToXTile(double, int)</h4>
+  <div class="markdown level1 summary"><p>Calculates the tile coordinate for a given longitude and a zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double LongitudeToXTile(double longitude, int zoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">longitude</span></td>
+        <td><p>The longitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The tile value of a longitude.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_MaximumTileExtents_" data-uid="Holoride.ElasticSDK.GeoCoordinate.MaximumTileExtents*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_MaximumTileExtents_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.MaximumTileExtents(System.Int32)">MaximumTileExtents(int)</h4>
+  <div class="markdown level1 summary"><p>Calculates maximum extents a tile has at a given zoom.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double MaximumTileExtents(int zoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The maximum tile extents.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_NEDToXYZ_" data-uid="Holoride.ElasticSDK.GeoCoordinate.NEDToXYZ*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_NEDToXYZ_Holoride_ElasticSDK_GlobalPosition_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.NEDToXYZ(Holoride.ElasticSDK.GlobalPosition,Holoride.ElasticSDK.GeoCoordinate)">NEDToXYZ(GlobalPosition, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Transforms local ned-coordinates to ECEF (WGS84) cartesian coordinates with a given pivot.
+See <a href="https://en.wikipedia.org/wiki/North_east_down">https://en.wikipedia.org/wiki/North_east_down</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalPosition NEDToXYZ(GlobalPosition ned, GeoCoordinate pivotLLH)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">ned</span></td>
+        <td><p>The nec-coordinates to transform.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivotLLH</span></td>
+        <td><p>The pivot geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The ECEF (WGS84) cartesian coordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_TileBounds_" data-uid="Holoride.ElasticSDK.GeoCoordinate.TileBounds*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_TileBounds_UnityEngine_Vector2Int_System_Int32_System_Double__System_Double__System_Double__System_Double__" data-uid="Holoride.ElasticSDK.GeoCoordinate.TileBounds(UnityEngine.Vector2Int,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)">TileBounds(Vector2Int, int, out double, out double, out double, out double)</h4>
+  <div class="markdown level1 summary"><p>Computes the outer latitude-longitude-bounds of a tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TileBounds(Vector2Int globalTilePosition, int zoom, out double longitudeMin, out double longitudeMax, out double latitudeMin, out double latitudeMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">globalTilePosition</span></td>
+        <td><p>The global tile position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">longitudeMin</span></td>
+        <td><p>The resulting minimum longitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">longitudeMax</span></td>
+        <td><p>The resulting maximum longitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">latitudeMin</span></td>
+        <td><p>The resulting minimum latitude.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">latitudeMax</span></td>
+        <td><p>The resulting maximum latitude.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_TileToGeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.TileToGeoCoordinate*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_TileToGeoCoordinate_UnityEngine_Vector2Int_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.TileToGeoCoordinate(UnityEngine.Vector2Int,System.Int32)">TileToGeoCoordinate(Vector2Int, int)</h4>
+  <div class="markdown level1 summary"><p>Calculates the GeoCoordinate for a given global tile position and zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GeoCoordinate TileToGeoCoordinate(Vector2Int globalTilePosition, int zoomLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">globalTilePosition</span></td>
+        <td><p>The tile position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td><p>The zoom level of the tile position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><p>The GeoCoordinate of the tile position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_ToCartesian_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToCartesian*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_ToCartesian_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToCartesian(Holoride.ElasticSDK.GeoCoordinate)">ToCartesian(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Gets the cartesian representation of the coordinate relative to the pivot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ToCartesian(GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot point geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><p>The NED cartesian representation of this geoCoordinate. in shifted space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_ToCartesian2D_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToCartesian2D*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_ToCartesian2D_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToCartesian2D(Holoride.ElasticSDK.GeoCoordinate)">ToCartesian2D(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Gets the cartesian representation of the coordinate relative to the pivot as a Vector2D.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ToCartesian2D(GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot point geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><p>The NED cartesian representation of this geoCoordinate as a Vector2D.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_ToCartesianDouble_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToCartesianDouble*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_ToCartesianDouble_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToCartesianDouble(Holoride.ElasticSDK.GeoCoordinate)">ToCartesianDouble(GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Gets the cartesian representation of the coordinate in world scale. As this representation is not
+pinned to a pivot, it has to support double precision to make sense.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GlobalPosition ToCartesianDouble(GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot point geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The NED cartesian representation of this geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_ToString_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToString*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_ToString" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring#system-valuetype-tostring">ValueType.ToString()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_ToTileCoord_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToTileCoord*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_ToTileCoord_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToTileCoord(System.Int32)">ToTileCoord(int)</h4>
+  <div class="markdown level1 summary"><p>Converts a GeoCoordinate to a float tile position based on a given zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ToTileCoord(int zoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><p>The tile coordinate as Vector2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Holoride_ElasticSDK_GeoCoordinate_ToTileCoord_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a href="https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#C.23">https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#C.23</a>.</p>
+</div>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_ToTilePos_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToTilePos*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_ToTilePos_System_Int32_UnityEngine_Vector2__" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToTilePos(System.Int32,UnityEngine.Vector2@)">ToTilePos(int, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>Converts a GeoCoordinate to an integer tile position based on a given zoom level. Also writes the
+exact uv-coordinates of the GeoCoordinate on the tile in an out parameter as Vector2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int ToTilePos(int zoom, out Vector2 uv)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">uv</span></td>
+        <td><p>Out parameter for the UV-Coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><p>The tile position as Vector2Int.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Holoride_ElasticSDK_GeoCoordinate_ToTilePos_System_Int32_UnityEngine_Vector2___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a href="https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#C.23">https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#C.23</a>.</p>
+</div>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_ToTilePos_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToTilePos*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_ToTilePos_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.ToTilePos(System.Int32)">ToTilePos(int)</h4>
+  <div class="markdown level1 summary"><p>Converts a GeoCoordinate to an integer tile position based on a given zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int ToTilePos(int zoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><p>The tile position as Vector2Int.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Holoride_ElasticSDK_GeoCoordinate_ToTilePos_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a href="https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#C.23">https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#C.23</a>.</p>
+</div>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_XTileToLongitude_" data-uid="Holoride.ElasticSDK.GeoCoordinate.XTileToLongitude*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_XTileToLongitude_System_Int32_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.XTileToLongitude(System.Int32,System.Int32)">XTileToLongitude(int, int)</h4>
+  <div class="markdown level1 summary"><p>Calculates the longitude for a given tile coordinate and a zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double XTileToLongitude(int xTile, int zoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">xTile</span></td>
+        <td><p>The tile's x coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The longitude value of a tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_XYZToLLH_" data-uid="Holoride.ElasticSDK.GeoCoordinate.XYZToLLH*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_XYZToLLH_Holoride_ElasticSDK_GlobalPosition_Holoride_ElasticSDK_GeoCoordinate__" data-uid="Holoride.ElasticSDK.GeoCoordinate.XYZToLLH(Holoride.ElasticSDK.GlobalPosition,Holoride.ElasticSDK.GeoCoordinate@)">XYZToLLH(GlobalPosition, out GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Transforms ECEF (WGS84) cartesian coordinates to geoCoordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool XYZToLLH(GlobalPosition position, out GeoCoordinate result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The given ECEF (WGS84) cartesian coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The resulting geo-coordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_XYZToNED_" data-uid="Holoride.ElasticSDK.GeoCoordinate.XYZToNED*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_XYZToNED_Holoride_ElasticSDK_GlobalPosition_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.XYZToNED(Holoride.ElasticSDK.GlobalPosition,Holoride.ElasticSDK.GeoCoordinate)">XYZToNED(GlobalPosition, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Transforms ECEF (WGS84) cartesian coordinates to local ned-coordinates with a given pivot.
+See <a href="https://en.wikipedia.org/wiki/North_east_down">https://en.wikipedia.org/wiki/North_east_down</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalPosition XYZToNED(GlobalPosition xyz, GeoCoordinate pivotLLH)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>The ECEF (WGS84) cartesian coordinates to transform.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivotLLH</span></td>
+        <td><p>The pivot geoCoordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The ned-coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_YTileToLatitude_" data-uid="Holoride.ElasticSDK.GeoCoordinate.YTileToLatitude*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_YTileToLatitude_System_Int32_System_Int32_" data-uid="Holoride.ElasticSDK.GeoCoordinate.YTileToLatitude(System.Int32,System.Int32)">YTileToLatitude(int, int)</h4>
+  <div class="markdown level1 summary"><p>Calculates the latitude for a given tile coordinate and a zoom level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double YTileToLatitude(int yTile, int zoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">yTile</span></td>
+        <td><p>The tile's y coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoom</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The latitude of a tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_op_Equality_" data-uid="Holoride.ElasticSDK.GeoCoordinate.op_Equality*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_op_Equality_Holoride_ElasticSDK_GeoCoordinate_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.op_Equality(Holoride.ElasticSDK.GeoCoordinate,Holoride.ElasticSDK.GeoCoordinate)">operator ==(GeoCoordinate, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(GeoCoordinate left, GeoCoordinate right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GeoCoordinate_op_Inequality_" data-uid="Holoride.ElasticSDK.GeoCoordinate.op_Inequality*"></a>
+  <h4 id="Holoride_ElasticSDK_GeoCoordinate_op_Inequality_Holoride_ElasticSDK_GeoCoordinate_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GeoCoordinate.op_Inequality(Holoride.ElasticSDK.GeoCoordinate,Holoride.ElasticSDK.GeoCoordinate)">operator !=(GeoCoordinate, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(GeoCoordinate left, GeoCoordinate right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

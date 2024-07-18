@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pose Cluster Regular Polygon | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Pose Cluster Regular Polygon | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="pose-cluster-regular-polygon">Pose Cluster Regular Polygon</h1>
+
+<h2 id="overview">Overview</h2>
+<p>The Pose Cluster Regular Polygon node samples a cluster of poses around an initial pose in the shape of a regular polygon.</p>
+<p><img src="../../../attachments/img/screenshots/Procedural-Generation/Nodes/PoseClusterRegularPolygon/00_Overview.png" alt="The default Pose Cluster Regular Polygon node"></p>
+<h2 id="detailed-explanation">Detailed Explanation</h2>
+<p>The basic idea behind this node is to procedurally sample a cluster of newly generated poses around an initial set of poses.
+The shape that the cluster takes is restricted by the properties of a regular polygon, so equal sides and inner angles.
+These properties are adjusted by the parameters the user sets.
+Note that the initial set of poses is discarded.</p>
+<p>An arbitrary set of initial poses can be used to sample clusters from.
+Because of this and the fact that we will most likely use the newly generated poses to spawn game objects that should not overlap, we curated the <em>Min Distance</em> parameter as the first one.
+This parameter defines the <strong>minimum</strong> distance that the clustered poses will have towards their neighbors.
+<em>Min Distance</em> has a direct influence on the cluster density.</p>
+<p>The <em>Corners</em> parameter is used to control the very shape of the regular polygon (e.g. 3 corners result in a triangle, 4 in a square..).</p>
+<p>To control the size of the cluster, that is, the distance that each corner pose will have towards the center, we set a <em>Cluster Radius</em>.
+Note here, that we will find a button at the bottom of the node's parameter stack called <em>Fit Radius</em>. The button is used to find the next closest radius that results in each pose's distance towards its neighbors being equal to the set <em>Min Distance</em> parameter.
+This can come in handy if you want pack spawned objects tightly together.</p>
+<p>Overlapping clusters will not fulfill the minimum distance constraint.</p>
+<h2 id="parameters">Parameters</h2>
+<h3 id="inputs">Inputs</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input</td>
+<td>PoseSet</td>
+<td>The initial set of poses to sample the cluster poses from.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="controls">Controls</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Min Distance</td>
+<td>float</td>
+<td>The minimum distance that clustered poses will have towards one another.</td>
+</tr>
+<tr>
+<td>Corners</td>
+<td>int</td>
+<td>The number of corners of the regular polygon.</td>
+</tr>
+<tr>
+<td>Cluster Radius</td>
+<td>float</td>
+<td>The distance between the corners and the cluster center.</td>
+</tr>
+<tr>
+<td>Corner Poses</td>
+<td>bool</td>
+<td>States whether to generate poses at the corners.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="spawning-objects-in-clusters">Spawning Objects In Clusters</h3>
+<p><img src="../../../attachments/img/screenshots/Procedural-Generation/Nodes/PoseClusterRegularPolygon/01_ExamplePoseClusterRegPoly.png" alt="Spawning A Wall Cluster Setup"></p>
+<p>In this example we use the Pose Cluster Regular Polygon node twice to spawn pentagonal shapes that are made out of wall pieces and corner pieces.
+The first step for the proper parameterization of the node is to set the <em>Min Distance</em> according to the extents and the pivot of the mesh that we want to spawn at the generated pose positions.
+Our wall pieces are 20 meters wide and the pivot is in the center, so we set the minimum distance to 10 meters.
+<em>Corners</em> set to 5 will create the pentagon shape.
+To realize a wall without any gaps we choose a rough estimate of how large the <em>Cluster Radius</em> is supposed to be and then hit the <em>Fit Cluster</em> button.
+Uncheck <em>Corner Poses</em> to get rid of the shape's corners.</p>
+<p>For the second instance of the node we choose the same <em>Corners</em> and <em>Cluster Radius</em> parameter, keep the corner poses and finally increase the <em>Min Distance</em> parameter until we only see corner poses left.
+We do not want to click the button this time.</p>
+<p><img src="../../../attachments/img/screenshots/Procedural-Generation/Nodes/PoseClusterRegularPolygon/01_ExamplePoseClusterRegPoly_Result.png" alt="Spawning A Wall Cluster Result"></p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Regular_polygon">Regular Polygon</a> properties</li>
+</ul>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

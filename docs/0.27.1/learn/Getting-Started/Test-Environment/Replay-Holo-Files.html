@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Replay Holo Files | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Replay Holo Files | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<div class="button-container">
+    <div class="align-left">
+        <a href="../Test-Environment.html" class="button button--text">&#10094; Test Environment</a>
+    </div>
+    <div class="align-right">
+        <a href="In-Vehicle-Tests.html" class="button button--text">In-Vehicle Tests &#10095;</a>
+    </div>
+</div>
+<hr class="rounded">
+<h2 id="replay-holo-files">Replay Holo Files</h2>
+<p>Testing during development is highly important and the Elastic SDK provides the ability to test in-car experiences at your desk. This is possible by playing back replays of recorded or simulated vehicle localization data within the Unity Editor. All such replays are represented by <a class="xref" href="../../../api/Holoride.ElasticSDK.Replay.html">Replay</a> assets.</p>
+<h3 id="playback">Playback</h3>
+<p>Replays are typically based on recorded .holo and .holo2 files. These file types contain the recorded motion data of real-world travel in a car.</p>
+<p>A default replay over the full length of the recording will be automatically created for each .holo and .holo2 file imported into your Unity project.</p>
+<p>It is possible to create further replays representing different time slices of the recordings.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Alternatively, <a class="xref" href="../../../api/Holoride.ElasticSDK.Route.html">Route</a> assets can be used as a source for synthetic rides, with a subset of possible sensory data. A common source for such routes are .kml files and the <a class="xref" href="../../../api/Holoride.ElasticSDK.RouteFromAddresses.html">RouteFromAddresses</a> Scriptable Object.
+<em>Route from Addresses</em> assets can be created via the <em>Create &gt; holoride</em> right-click context menu.</p>
+<p>As with .holo and .holo2 files, multiple replays over varying time slices can be created based on the same route.</p>
+</div>
+<p>Replays are played back through the <a class="xref" href="../../../api/Holoride.ElasticSDK.ReplayStateReceiverBackend.html">ReplayStateReceiverBackend</a>. To use the <a class="xref" href="../../../api/Holoride.ElasticSDK.ReplayStateReceiverBackend.html">ReplayStateReceiverBackend</a>:</p>
+<ul>
+<li>select it in the <a class="xref" href="../../../api/Holoride.ElasticSDK.StateReceiver.html">StateReceiver</a> for the context to use it in (editor and/or standalone).</li>
+<li>add a <a class="xref" href="../../../api/Holoride.ElasticSDK.Replay.html">Replay</a> of a .holo or .holo2 file to the <strong>Replay</strong> field in the inspector.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can download a variety of ride replay assets here: <a href="https://github.com/holoride/esdk-replays/">here</a>.</p>
+</div>
+<p><img src="../../../attachments/img/screenshots/esdk_core_statereceiver_asset.png" alt="holoride Settings Page with focus on the StateReceiver section"></p>
+<h3 id="recording">Recording</h3>
+<p>In order to record your data at runtime, add the <a class="xref" href="../../../api/Holoride.ElasticSDK.StateRecorder.html">StateRecorder</a> component to any <strong>GameObject</strong> in your Unity scene.</p>
+<p>By default, recording will start automatically. If you prefer to start recording manually, untick the <strong>Automatically Start Recording</strong> checkbox on the component and call the <strong>StartRecording</strong> method when you wish to start recording.</p>
+<p>The recording is automatically stopped when the component is disabled or the game stops.</p>
+<p><img src="../../../attachments/img/screenshots/esdk_core_staterecorder.png" alt=""></p>
+<p>The recording is stored in a file located in your application's <strong>persistent data path</strong>, in the <code>/holoride/Recordings</code> subdirectory. As with any other .holo file, it's <a class="xref" href="../../../api/Holoride.ElasticSDK.Replay.html">Replay</a> may be used with the <a class="xref" href="../../../api/Holoride.ElasticSDK.ReplayStateReceiverBackend.html">ReplayStateReceiverBackend</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can learn more about the <strong>persistent data path</strong> in <a href="https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html">the Unity documentation</a>.</p>
+</div>
+<hr class="rounded">
+<div class="button-container">
+    <div class="align-left">
+        <a href="../Test-Environment.html" class="button button--text">&#10094; Test Environment</a>
+    </div>
+    <div class="align-right">
+        <a href="In-Vehicle-Tests.html" class="button button--text">In-Vehicle Tests &#10095;</a>
+    </div>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>
