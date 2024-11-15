@@ -5,6 +5,9 @@
     },
     "0.28-preview": {
       "SemanticVersion": "0.28.0-preview.1"
+    },
+    "0.28-rc": {
+      "SemanticVersion": "0.28.0-rc.1"
     }
   }
 }
