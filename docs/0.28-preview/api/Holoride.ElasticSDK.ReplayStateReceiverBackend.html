@@ -1,0 +1,567 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReplayStateReceiverBackend
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReplayStateReceiverBackend
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend">
+
+
+  <h1 id="Holoride_ElasticSDK_ReplayStateReceiverBackend" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend" class="text-break">Class ReplayStateReceiverBackend
+</h1>
+  <div class="markdown level0 summary"><p>Receives .holo file state.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></div>
+    <div class="level3"><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a></div>
+    <div class="level4"><span class="xref">ReplayStateReceiverBackend</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_State">StateReceiverBackend.State</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_AllListeners">StateReceiverBackend.AllListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_LocalizationListeners">StateReceiverBackend.LocalizationListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_AddListener_Holoride_ElasticSDK_IStateReceiverListener_">StateReceiverBackend.AddListener(IStateReceiverListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_RemoveListener_Holoride_ElasticSDK_IStateReceiverListener_">StateReceiverBackend.RemoveListener(IStateReceiverListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_NotifyListenerConfigurationChanged">StateReceiverBackend.NotifyListenerConfigurationChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_Pivot">StateReceiverBackend.Pivot</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_IsEnabled">StateReceiverBackend.IsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnListenerAdded_Holoride_ElasticSDK_IStateReceiverListener_">StateReceiverBackend.OnListenerAdded(IStateReceiverListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnListenerRemoved_Holoride_ElasticSDK_IStateReceiverListener_">StateReceiverBackend.OnListenerRemoved(IStateReceiverListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnStateUpdated">StateReceiverBackend.OnStateUpdated()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnStateReceivedAsync_Holoride_ElasticSDK_VehicleSensorState_">StateReceiverBackend.OnStateReceivedAsync(VehicleSensorState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnRouteChanged">StateReceiverBackend.OnRouteChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnMapAccessTokenReceived_System_String_">StateReceiverBackend.OnMapAccessTokenReceived(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_UpdatePivot_Holoride_ElasticSDK_GeoCoordinate_">StateReceiverBackend.UpdatePivot(GeoCoordinate)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.StateReceivers.dll</h6>
+  <h5 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public sealed class ReplayStateReceiverBackend : StateReceiverBackend</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_InterpolationFrameSize_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.InterpolationFrameSize*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_InterpolationFrameSize" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.InterpolationFrameSize">InterpolationFrameSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the interpolation frame size controls the delay data is presented at, where this
+delay window is used to interpolate underlying data, to ensure it is played back
+at the same rate the underlying records represent. Disabling interpolation by
+setting it to zero may result in rubber-banding.</p>
+<p>
+The window size is specified in seconds.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float InterpolationFrameSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_IsPaused_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.IsPaused*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_IsPaused" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.IsPaused">IsPaused</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether playback of the underlying data is paused. This differs from
+disabling and re-enabling this component in that it will not reset the playback state, but resume playback
+where it was previously paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPaused { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Loop_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Loop*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Loop" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Loop">Loop</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the playback of the underlying recording should loop.</p>
+<p>
+Note that playback is stopped by disabling this component. Setting this
+to true will not automatically enable this component.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Loop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Replay_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Replay*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Replay" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Replay">Replay</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the underlying replay that is currently used for playback. Setting this to a new
+value will cause playback to be re-started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Replay Replay { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.Replay.html">Replay</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if the specified value is <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Route_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Route*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Route" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Route">Route</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the current route set in the replay.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IRoute Route { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.IRoute.html">IRoute</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_Route">StateReceiverBackend.Route</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when trying to set the route.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_TravelInformationState_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.TravelInformationState*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_TravelInformationState" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.TravelInformationState">TravelInformationState</h4>
+  <div class="markdown level1 summary"><p>Gets the travel information based on the current position along the <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_Route">Route</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TravelInformationState TravelInformationState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.TravelInformationState.html">TravelInformationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_TravelInformationState">StateReceiverBackend.TravelInformationState</a></div>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_VehicleSensorState_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.VehicleSensorState*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_VehicleSensorState" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.VehicleSensorState">VehicleSensorState</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the most recently received state.</p>
+<p>
+This may be updated from worker threads, so when using the value in conditionals it is
+recommended to store the value in a local variable.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override VehicleSensorState VehicleSensorState { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.VehicleSensorState.html">VehicleSensorState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_VehicleSensorState">StateReceiverBackend.VehicleSensorState</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Disable_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Disable*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Disable" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Disable">Disable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Disable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_Disable">StateReceiverBackend.Disable()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Enable_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Enable*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Enable" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Enable">Enable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Enable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_Enable">StateReceiverBackend.Enable()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_OnApplicationResume_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.OnApplicationResume*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_OnApplicationResume" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.OnApplicationResume">OnApplicationResume()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnApplicationResume()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnApplicationResume">StateReceiverBackend.OnApplicationResume()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_OnDestroy_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.OnDestroy*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_OnDestroy" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_OnDestroy">StateReceiverBackend.OnDestroy()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Seek_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Seek*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Seek_System_Single_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Seek(System.Single)">Seek(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Seek(float deltaInSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">deltaInSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Seek_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Seek*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Seek_System_TimeSpan_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Seek(System.TimeSpan)">Seek(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Tries to seek by the specified amount of seconds. Advances playback by the specified amount of time
+if the specified number is positive, rewinds playback for negative values. This will fire
+<a class="xref" href="Holoride.ElasticSDK.IStateReceiverLocalizationEventListener.html#Holoride_ElasticSDK_IStateReceiverLocalizationEventListener_OnVehicleLocalizationReset">OnVehicleLocalizationReset()</a>. Note that this will cause the
+player position to interpolate towards the position after the seek. Also note that this does <em>not</em>
+cause generation state to be re-evaluated. For content generation, a seek is originally just a potentially
+large jump in player position. In particular when rewinding it is strongly suggested to manually stop and
+restart generation to avoid unexpected results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Seek(TimeSpan delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>The time delta to apply, in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Update_" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Update*"></a>
+  <h4 id="Holoride_ElasticSDK_ReplayStateReceiverBackend_Update" data-uid="Holoride.ElasticSDK.ReplayStateReceiverBackend.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html#Holoride_ElasticSDK_StateReceiverBackend_Update">StateReceiverBackend.Update()</a></div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

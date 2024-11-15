@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StateReceiver
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StateReceiver
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.StateReceiver">
+
+
+  <h1 id="Holoride_ElasticSDK_StateReceiver" data-uid="Holoride.ElasticSDK.StateReceiver" class="text-break">Class StateReceiver
+</h1>
+  <div class="markdown level0 summary"><p>This is the central data source for localization data and any other data provided by
+<a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a>s.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></div>
+    <div class="level3"><a class="xref" href="Holoride.ElasticSDK.SingletonBase.html">SingletonBase</a></div>
+    <div class="level4"><a class="xref" href="Holoride.ElasticSDK.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="Holoride.ElasticSDK.StateReceiver.html">StateReceiver</a>&gt;</div>
+    <div class="level5"><span class="xref">StateReceiver</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.Singleton-1.html#Holoride_ElasticSDK_Singleton_1_Instance">Singleton&lt;StateReceiver&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.SingletonBase.html#Holoride_ElasticSDK_SingletonBase_SingletonOnCreate">SingletonBase.SingletonOnCreate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.SingletonBase.html#Holoride_ElasticSDK_SingletonBase_SingletonOnEnable">SingletonBase.SingletonOnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.SingletonBase.html#Holoride_ElasticSDK_SingletonBase_SingletonOnDisable">SingletonBase.SingletonOnDisable()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_StateReceiver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+[HelpURL(&quot;http://localhost:8080/api/Holoride.ElasticSDK.StateReceiver.html&quot;)]
+[Obfuscation(Exclude = true, ApplyToMembers = true)]
+public sealed class StateReceiver : Singleton&lt;StateReceiver&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_AvailableBackends_" data-uid="Holoride.ElasticSDK.StateReceiver.AvailableBackends*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_AvailableBackends" data-uid="Holoride.ElasticSDK.StateReceiver.AvailableBackends">AvailableBackends</h4>
+  <div class="markdown level1 summary"><p>Gets the list of all available backends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyList&lt;StateReceiverBackend&gt; AvailableBackends { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_CurrentBackend_" data-uid="Holoride.ElasticSDK.StateReceiver.CurrentBackend*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_CurrentBackend" data-uid="Holoride.ElasticSDK.StateReceiver.CurrentBackend">CurrentBackend</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the backend currently in use.</p>
+<p><strong>Note:</strong> Beware when changing the CurrentBackend you need to re-acquire the references to the Pivot and Route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StateReceiverBackend CurrentBackend { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_EditorBackend_" data-uid="Holoride.ElasticSDK.StateReceiver.EditorBackend*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_EditorBackend" data-uid="Holoride.ElasticSDK.StateReceiver.EditorBackend">EditorBackend</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StateReceiverBackend EditorBackend { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_Pivot_" data-uid="Holoride.ElasticSDK.StateReceiver.Pivot*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_Pivot" data-uid="Holoride.ElasticSDK.StateReceiver.Pivot">Pivot</h4>
+  <div class="markdown level1 summary"><p>Gets the pivot of the <a class="xref" href="Holoride.ElasticSDK.StateReceiver.html#Holoride_ElasticSDK_StateReceiver_CurrentBackend">CurrentBackend</a>, used as reference point for the mapping between real world <a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a> and the coordinate system in Unity.</p>
+<p><strong>Note:</strong> Beware when changing the CurrentBackend you need to re-acquire the reference to the Pivot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISharedGeoCoordinate Pivot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.ISharedGeoCoordinate.html">ISharedGeoCoordinate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_Route_" data-uid="Holoride.ElasticSDK.StateReceiver.Route*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_Route" data-uid="Holoride.ElasticSDK.StateReceiver.Route">Route</h4>
+  <div class="markdown level1 summary"><p>Gets the current route of the <a class="xref" href="Holoride.ElasticSDK.StateReceiver.html#Holoride_ElasticSDK_StateReceiver_CurrentBackend">CurrentBackend</a>.</p>
+<p><strong>Note:</strong> Beware when changing the CurrentBackend you need to re-acquire the reference to the Route.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRoute Route { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.IRoute.html">IRoute</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_State_" data-uid="Holoride.ElasticSDK.StateReceiver.State*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_State" data-uid="Holoride.ElasticSDK.StateReceiver.State">State</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StateReceiverState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.StateReceiverState.html">StateReceiverState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_StationaryBackend_" data-uid="Holoride.ElasticSDK.StateReceiver.StationaryBackend*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_StationaryBackend" data-uid="Holoride.ElasticSDK.StateReceiver.StationaryBackend">StationaryBackend</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StateReceiverBackend StationaryBackend { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_TravelBackend_" data-uid="Holoride.ElasticSDK.StateReceiver.TravelBackend*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_TravelBackend" data-uid="Holoride.ElasticSDK.StateReceiver.TravelBackend">TravelBackend</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StateReceiverBackend TravelBackend { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_TravelInformationState_" data-uid="Holoride.ElasticSDK.StateReceiver.TravelInformationState*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_TravelInformationState" data-uid="Holoride.ElasticSDK.StateReceiver.TravelInformationState">TravelInformationState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TravelInformationState TravelInformationState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.TravelInformationState.html">TravelInformationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_VehicleSensorState_" data-uid="Holoride.ElasticSDK.StateReceiver.VehicleSensorState*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_VehicleSensorState" data-uid="Holoride.ElasticSDK.StateReceiver.VehicleSensorState">VehicleSensorState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VehicleSensorState VehicleSensorState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.VehicleSensorState.html">VehicleSensorState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_AddListener_" data-uid="Holoride.ElasticSDK.StateReceiver.AddListener*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_AddListener_Holoride_ElasticSDK_IStateReceiverListener_" data-uid="Holoride.ElasticSDK.StateReceiver.AddListener(Holoride.ElasticSDK.IStateReceiverListener)">AddListener(IStateReceiverListener)</h4>
+  <div class="markdown level1 summary"><p>Registers a new listener that should be notified of state receiver events. All registered listeners will
+automatically migrated when the selected <a class="xref" href="Holoride.ElasticSDK.StateReceiver.html#Holoride_ElasticSDK_StateReceiver_TravelBackend">TravelBackend</a> changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListener(IStateReceiverListener listener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.IStateReceiverListener.html">IStateReceiverListener</a></td>
+        <td><span class="parametername">listener</span></td>
+        <td><p>The listener to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_NotifyListenerConfigurationChanged_" data-uid="Holoride.ElasticSDK.StateReceiver.NotifyListenerConfigurationChanged*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_NotifyListenerConfigurationChanged" data-uid="Holoride.ElasticSDK.StateReceiver.NotifyListenerConfigurationChanged">NotifyListenerConfigurationChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void NotifyListenerConfigurationChanged()</code></pre>
+  </div>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_RemoveListener_" data-uid="Holoride.ElasticSDK.StateReceiver.RemoveListener*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_RemoveListener_Holoride_ElasticSDK_IStateReceiverListener_" data-uid="Holoride.ElasticSDK.StateReceiver.RemoveListener(Holoride.ElasticSDK.IStateReceiverListener)">RemoveListener(IStateReceiverListener)</h4>
+  <div class="markdown level1 summary"><p>Removes a listener previously registered with <a class="xref" href="Holoride.ElasticSDK.StateReceiver.html#Holoride_ElasticSDK_StateReceiver_AddListener_Holoride_ElasticSDK_IStateReceiverListener_">AddListener(IStateReceiverListener)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListener(IStateReceiverListener listener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.IStateReceiverListener.html">IStateReceiverListener</a></td>
+        <td><span class="parametername">listener</span></td>
+        <td><p>The listener to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_TryGetBackend_" data-uid="Holoride.ElasticSDK.StateReceiver.TryGetBackend*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_TryGetBackend_System_Type_Holoride_ElasticSDK_StateReceiverBackend__" data-uid="Holoride.ElasticSDK.StateReceiver.TryGetBackend(System.Type,Holoride.ElasticSDK.StateReceiverBackend@)">TryGetBackend(Type, out StateReceiverBackend)</h4>
+  <div class="markdown level1 summary"><p>Get the first available backend with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetBackend(Type type, out StateReceiverBackend result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the backend to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The first backend with the specified type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether a backend with the specified type exists and could be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_StateReceiver_TryGetBackend_" data-uid="Holoride.ElasticSDK.StateReceiver.TryGetBackend*"></a>
+  <h4 id="Holoride_ElasticSDK_StateReceiver_TryGetBackend__1___0__" data-uid="Holoride.ElasticSDK.StateReceiver.TryGetBackend``1(``0@)">TryGetBackend&lt;T&gt;(out T)</h4>
+  <div class="markdown level1 summary"><p>Get the first available backend with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetBackend&lt;T&gt;(out T result) where T : StateReceiverBackend</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The first backend with the specified type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether a backend with the specified type exists and could be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the backend to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_StateReceiver_OnBackendChanged" data-uid="Holoride.ElasticSDK.StateReceiver.OnBackendChanged">OnBackendChanged</h4>
+  <div class="markdown level1 summary"><p>Invoked when the <a class="xref" href="Holoride.ElasticSDK.StateReceiver.html#Holoride_ElasticSDK_StateReceiver_CurrentBackend">CurrentBackend</a> has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event StateReceiver.BackendChangedHandler OnBackendChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.StateReceiver.html">StateReceiver</a>.<a class="xref" href="Holoride.ElasticSDK.StateReceiver.BackendChangedHandler.html">BackendChangedHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Holoride_ElasticSDK_StateReceiver_OnBackendChanged_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="Holoride.ElasticSDK.StateReceiver.BackendChangedHandler.html">StateReceiver.BackendChangedHandler</a> takes a <a class="xref" href="Holoride.ElasticSDK.StateReceiverBackend.html">StateReceiverBackend</a> argument.</p>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

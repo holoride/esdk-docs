@@ -1,0 +1,1698 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct GlobalBounds
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct GlobalBounds
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.GlobalBounds">
+
+
+  <h1 id="Holoride_ElasticSDK_GlobalBounds" data-uid="Holoride.ElasticSDK.GlobalBounds" class="text-break">Struct GlobalBounds
+</h1>
+  <div class="markdown level0 summary"><p>Creates min and max latitude and longitude to define an area. Mind that this area is not a square
+or a rectangle on the earth surface. However, smaller areas which are closer to the equator
+approximate a rectangular shape.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_GlobalBounds_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct GlobalBounds</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds__ctor_" data-uid="Holoride.ElasticSDK.GlobalBounds.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds__ctor_System_Double_System_Double_System_Double_System_Double_" data-uid="Holoride.ElasticSDK.GlobalBounds.#ctor(System.Double,System.Double,System.Double,System.Double)">GlobalBounds(double, double, double, double)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalBounds(double xMin, double zMin, double xMax, double zMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">xMin</span></td>
+        <td><p>The minimum X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">zMin</span></td>
+        <td><p>The minimum Z value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">xMax</span></td>
+        <td><p>The maximum X value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">zMax</span></td>
+        <td><p>The maximum Z value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Empty" data-uid="Holoride.ElasticSDK.GlobalBounds.Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>Represents empty bounds (with max value being smaller than min values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly GlobalBounds Empty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_XMax" data-uid="Holoride.ElasticSDK.GlobalBounds.XMax">XMax</h4>
+  <div class="markdown level1 summary"><p>The coordinate's maximum x-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double XMax</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_XMin" data-uid="Holoride.ElasticSDK.GlobalBounds.XMin">XMin</h4>
+  <div class="markdown level1 summary"><p>The coordinate's minimum x-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double XMin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_ZMax" data-uid="Holoride.ElasticSDK.GlobalBounds.ZMax">ZMax</h4>
+  <div class="markdown level1 summary"><p>The coordinate's maximum z-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ZMax</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_ZMin" data-uid="Holoride.ElasticSDK.GlobalBounds.ZMin">ZMin</h4>
+  <div class="markdown level1 summary"><p>The coordinate's minimum z-value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ZMin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Center_" data-uid="Holoride.ElasticSDK.GlobalBounds.Center*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Center" data-uid="Holoride.ElasticSDK.GlobalBounds.Center">Center</h4>
+  <div class="markdown level1 summary"><p>Gets the Vector3Double of the center of an area defined by GeoBounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPosition Center { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Extents_" data-uid="Holoride.ElasticSDK.GlobalBounds.Extents*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Extents" data-uid="Holoride.ElasticSDK.GlobalBounds.Extents">Extents</h4>
+  <div class="markdown level1 summary"><p>Gets the extents of the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector2 Extents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Radius_" data-uid="Holoride.ElasticSDK.GlobalBounds.Radius*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Radius" data-uid="Holoride.ElasticSDK.GlobalBounds.Radius">Radius</h4>
+  <div class="markdown level1 summary"><p>Gets the distance from the center of the square grid area to any one of its four edges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Radius { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_SquareExtents_" data-uid="Holoride.ElasticSDK.GlobalBounds.SquareExtents*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_SquareExtents" data-uid="Holoride.ElasticSDK.GlobalBounds.SquareExtents">SquareExtents</h4>
+  <div class="markdown level1 summary"><p>Gets the extents as the edge length of the outermost square with the same center as the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SquareExtents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Clamp_" data-uid="Holoride.ElasticSDK.GlobalBounds.Clamp*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Clamp_Holoride_ElasticSDK_GlobalPosition_" data-uid="Holoride.ElasticSDK.GlobalBounds.Clamp(Holoride.ElasticSDK.GlobalPosition)">Clamp(GlobalPosition)</h4>
+  <div class="markdown level1 summary"><p>Clamps a vector representing a position along the X and Z axes to lie within the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GlobalPosition Clamp(GlobalPosition value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The position to clamp to within the bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>A vector representing the clamped position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Clamp_" data-uid="Holoride.ElasticSDK.GlobalBounds.Clamp*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Clamp_System_Double__System_Double__" data-uid="Holoride.ElasticSDK.GlobalBounds.Clamp(System.Double@,System.Double@)">Clamp(ref double, ref double)</h4>
+  <div class="markdown level1 summary"><p>Clamps a position represented by the specified X and Y coordinates to lie within the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly void Clamp(ref double x, ref double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X coordinate to clamp in-place.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The Z coordinate to clamp in-place.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_ClipLine_" data-uid="Holoride.ElasticSDK.GlobalBounds.ClipLine*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_ClipLine_Holoride_ElasticSDK_GlobalPosition_Holoride_ElasticSDK_GlobalPosition_System_Collections_Generic_List_Holoride_ElasticSDK_GlobalPosition__" data-uid="Holoride.ElasticSDK.GlobalBounds.ClipLine(Holoride.ElasticSDK.GlobalPosition,Holoride.ElasticSDK.GlobalPosition,System.Collections.Generic.List{Holoride.ElasticSDK.GlobalPosition})">ClipLine(GlobalPosition, GlobalPosition, List&lt;GlobalPosition&gt;)</h4>
+  <div class="markdown level1 summary"><p>Clips a line from P0 = (x0, y0) to P1 = (x1, y1) against a rectangle with
+diagonal from (xmin, ymin) to (xmax, ymax).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ClipLine(GlobalPosition p0, GlobalPosition p1, List&lt;GlobalPosition&gt; result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">p0</span></td>
+        <td><p>The start position of the line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The end position of the line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a>&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A list to be cleared and filled with two clipping points if the line intersects the rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of returned points in the result list which is either 0 or 2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_ComputeOuterGeoBounds_" data-uid="Holoride.ElasticSDK.GlobalBounds.ComputeOuterGeoBounds*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_ComputeOuterGeoBounds_Holoride_ElasticSDK_GeoCoordinate_System_Double__System_Double__System_Double__System_Double__" data-uid="Holoride.ElasticSDK.GlobalBounds.ComputeOuterGeoBounds(Holoride.ElasticSDK.GeoCoordinate,System.Double@,System.Double@,System.Double@,System.Double@)">ComputeOuterGeoBounds(GeoCoordinate, out double, out double, out double, out double)</h4>
+  <div class="markdown level1 summary"><p>Computes the outer corners of geo bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public void ComputeOuterGeoBounds(GeoCoordinate pivot, out double minLatitude, out double maxLatitude, out double minLongitude, out double maxLongitude)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">minLatitude</span></td>
+        <td><p>Min Latitude output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">maxLatitude</span></td>
+        <td><p>Max Latitude output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">minLongitude</span></td>
+        <td><p>Min Longitude output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">maxLongitude</span></td>
+        <td><p>Max Longitude output.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Contains_" data-uid="Holoride.ElasticSDK.GlobalBounds.Contains*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Contains_Holoride_ElasticSDK_GlobalPosition_" data-uid="Holoride.ElasticSDK.GlobalBounds.Contains(Holoride.ElasticSDK.GlobalPosition)">Contains(GlobalPosition)</h4>
+  <div class="markdown level1 summary"><p>States whether the given position is within these bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Contains(GlobalPosition position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The position to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether the given position lay within these bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Contains_" data-uid="Holoride.ElasticSDK.GlobalBounds.Contains*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Contains_System_Double_System_Double_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GlobalBounds.Contains(System.Double,System.Double,Holoride.ElasticSDK.GeoCoordinate)">Contains(double, double, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>States whether the given coordinate is within these bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(double latitude, double longitude, GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">latitude</span></td>
+        <td><p>The latitude to locate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">longitude</span></td>
+        <td><p>The longitude to locate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether the given coordinate lay within these bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Create_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Create_Holoride_ElasticSDK_GeoCoordinate_Holoride_ElasticSDK_GeoCoordinate___" data-uid="Holoride.ElasticSDK.GlobalBounds.Create(Holoride.ElasticSDK.GeoCoordinate,Holoride.ElasticSDK.GeoCoordinate[])">Create(GeoCoordinate, params GeoCoordinate[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalBounds Create(GeoCoordinate pivot, params GeoCoordinate[] coordinates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a>[]</td>
+        <td><span class="parametername">coordinates</span></td>
+        <td><p>A list of geo coordinates to wrap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Create_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Create_Holoride_ElasticSDK_GeoCoordinate_System_Int32_UnityEngine_Vector2Int_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create(Holoride.ElasticSDK.GeoCoordinate,System.Int32,UnityEngine.Vector2Int)">Create(GeoCoordinate, int, Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a> class for a tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalBounds Create(GeoCoordinate pivot, int zoomLevel, Vector2Int tilePosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">zoomLevel</span></td>
+        <td><p>The tile zoom level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">tilePosition</span></td>
+        <td><p>The tile position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Create_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Create_Holoride_ElasticSDK_GlobalPosition_System_Single_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create(Holoride.ElasticSDK.GlobalPosition,System.Single)">Create(GlobalPosition, float)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalBounds Create(GlobalPosition center, float extents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The bounds' center.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">extents</span></td>
+        <td><p>The bounds' extend.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Create_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Create_Holoride_ElasticSDK_GlobalPosition___" data-uid="Holoride.ElasticSDK.GlobalBounds.Create(Holoride.ElasticSDK.GlobalPosition[])">Create(params GlobalPosition[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalBounds Create(params GlobalPosition[] positions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a>[]</td>
+        <td><span class="parametername">positions</span></td>
+        <td><p>A list of positions to wrap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Create_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Create_System_Collections_Generic_IEnumerable_Holoride_ElasticSDK_GlobalPosition__" data-uid="Holoride.ElasticSDK.GlobalBounds.Create(System.Collections.Generic.IEnumerable{Holoride.ElasticSDK.GlobalPosition})">Create(IEnumerable&lt;GlobalPosition&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalBounds Create(IEnumerable&lt;GlobalPosition&gt; positions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a>&gt;</td>
+        <td><span class="parametername">positions</span></td>
+        <td><p>A list of positions to wrap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Create_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Create_UnityEngine_Vector2_System_Single_Holoride_ElasticSDK_GlobalPosition_" data-uid="Holoride.ElasticSDK.GlobalBounds.Create(UnityEngine.Vector2,System.Single,Holoride.ElasticSDK.GlobalPosition)">Create(Vector2, float, GlobalPosition)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GlobalBounds Create(Vector2 center, float squareExtents, GlobalPosition offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The bounds' center.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">squareExtents</span></td>
+        <td><p>The bounds' square extents.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The offset in double precision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_DoublePositionAtUV_" data-uid="Holoride.ElasticSDK.GlobalBounds.DoublePositionAtUV*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_DoublePositionAtUV_UnityEngine_Vector2_" data-uid="Holoride.ElasticSDK.GlobalBounds.DoublePositionAtUV(UnityEngine.Vector2)">DoublePositionAtUV(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Locates the position of a given uv within the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPosition DoublePositionAtUV(Vector2 uv)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">uv</span></td>
+        <td><p>The position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The position at the given uv.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Equals_" data-uid="Holoride.ElasticSDK.GlobalBounds.Equals*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Equals_Holoride_ElasticSDK_GlobalBounds_" data-uid="Holoride.ElasticSDK.GlobalBounds.Equals(Holoride.ElasticSDK.GlobalBounds)">Equals(GlobalBounds)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(GlobalBounds other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the current object is equal to the <code data-dev-comment-type="paramref" class="paramref">other</code> parameter; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Equals_" data-uid="Holoride.ElasticSDK.GlobalBounds.Equals*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Equals_System_Object_" data-uid="Holoride.ElasticSDK.GlobalBounds.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the specified object is equal to the current object; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals#system-valuetype-equals(system-object)">ValueType.Equals(Object)</a></div>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_GeoCoordinateAtUV_" data-uid="Holoride.ElasticSDK.GlobalBounds.GeoCoordinateAtUV*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_GeoCoordinateAtUV_UnityEngine_Vector2_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GlobalBounds.GeoCoordinateAtUV(UnityEngine.Vector2,Holoride.ElasticSDK.GeoCoordinate)">GeoCoordinateAtUV(Vector2, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Locates the position of a given uv within the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoCoordinate GeoCoordinateAtUV(Vector2 uv, GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><span class="parametername">uv</span></td>
+        <td><p>The position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><p>The geo coordinate at the given uv.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_GetHashCode_" data-uid="Holoride.ElasticSDK.GlobalBounds.GetHashCode*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_GetHashCode" data-uid="Holoride.ElasticSDK.GlobalBounds.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A hash code for the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode#system-valuetype-gethashcode">ValueType.GetHashCode()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_GetRandomPoint_" data-uid="Holoride.ElasticSDK.GlobalBounds.GetRandomPoint*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_GetRandomPoint_System_Random_" data-uid="Holoride.ElasticSDK.GlobalBounds.GetRandomPoint(System.Random)">GetRandomPoint(Random)</h4>
+  <div class="markdown level1 summary"><p>Returns a random point lying inside this bounding rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPosition GetRandomPoint(Random random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>The random number generator to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>A random point in this bounding rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Grow_" data-uid="Holoride.ElasticSDK.GlobalBounds.Grow*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Grow_System_Double_System_Double_" data-uid="Holoride.ElasticSDK.GlobalBounds.Grow(System.Double,System.Double)">Grow(double, double)</h4>
+  <div class="markdown level1 summary"><p>Grows the bounds along the X and the Z axis by the specified amounts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GlobalBounds Grow(double amountX, double amountZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">amountX</span></td>
+        <td><p>The amount by which to grow the bounds along the X axis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">amountZ</span></td>
+        <td><p>The amount by which to grow the bounds along the Z axis.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><p>The bounds grown by the specified amounts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Grow_" data-uid="Holoride.ElasticSDK.GlobalBounds.Grow*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Grow_System_Double_" data-uid="Holoride.ElasticSDK.GlobalBounds.Grow(System.Double)">Grow(double)</h4>
+  <div class="markdown level1 summary"><p>Grows the bounds along the X and the Z axis by the specified amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly GlobalBounds Grow(double amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount by which to grow the bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><p>The bounds grown by the specified amount.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_Overlaps_" data-uid="Holoride.ElasticSDK.GlobalBounds.Overlaps*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_Overlaps_Holoride_ElasticSDK_GlobalBounds_" data-uid="Holoride.ElasticSDK.GlobalBounds.Overlaps(Holoride.ElasticSDK.GlobalBounds)">Overlaps(GlobalBounds)</h4>
+  <div class="markdown level1 summary"><p>States whether the given bounds overlaps with these bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Overlaps(GlobalBounds other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The bounds to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether the given bounds overlap with these bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_ToString_" data-uid="Holoride.ElasticSDK.GlobalBounds.ToString*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_ToString" data-uid="Holoride.ElasticSDK.GlobalBounds.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring#system-valuetype-tostring">ValueType.ToString()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_UVAtDoublePose_" data-uid="Holoride.ElasticSDK.GlobalBounds.UVAtDoublePose*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_UVAtDoublePose_Holoride_ElasticSDK_GlobalPose_" data-uid="Holoride.ElasticSDK.GlobalBounds.UVAtDoublePose(Holoride.ElasticSDK.GlobalPose)">UVAtDoublePose(GlobalPose)</h4>
+  <div class="markdown level1 summary"><p>Locates the uv of a given pose position within the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 UVAtDoublePose(GlobalPose pose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPose.html">GlobalPose</a></td>
+        <td><span class="parametername">pose</span></td>
+        <td><p>The pose.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><p>The uv of a given pose position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_UVAtDoublePosition_" data-uid="Holoride.ElasticSDK.GlobalBounds.UVAtDoublePosition*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_UVAtDoublePosition_Holoride_ElasticSDK_GlobalPosition_" data-uid="Holoride.ElasticSDK.GlobalBounds.UVAtDoublePosition(Holoride.ElasticSDK.GlobalPosition)">UVAtDoublePosition(GlobalPosition)</h4>
+  <div class="markdown level1 summary"><p>Locates the uv of a given position within the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Vector2 UVAtDoublePosition(GlobalPosition position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><p>The uv of a given position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_UVAtGeoCoordinate_" data-uid="Holoride.ElasticSDK.GlobalBounds.UVAtGeoCoordinate*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_UVAtGeoCoordinate_Holoride_ElasticSDK_GeoCoordinate_Holoride_ElasticSDK_GeoCoordinate_" data-uid="Holoride.ElasticSDK.GlobalBounds.UVAtGeoCoordinate(Holoride.ElasticSDK.GeoCoordinate,Holoride.ElasticSDK.GeoCoordinate)">UVAtGeoCoordinate(GeoCoordinate, GeoCoordinate)</h4>
+  <div class="markdown level1 summary"><p>Locates the uv of a given coordinate within the bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 UVAtGeoCoordinate(GeoCoordinate coordinate, GeoCoordinate pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">coordinate</span></td>
+        <td><p>The coordinate to locate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2.html">Vector2</a></td>
+        <td><p>The uv of a given coordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_op_Equality_" data-uid="Holoride.ElasticSDK.GlobalBounds.op_Equality*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_op_Equality_Holoride_ElasticSDK_GlobalBounds_Holoride_ElasticSDK_GlobalBounds_" data-uid="Holoride.ElasticSDK.GlobalBounds.op_Equality(Holoride.ElasticSDK.GlobalBounds,Holoride.ElasticSDK.GlobalBounds)">operator ==(GlobalBounds, GlobalBounds)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(GlobalBounds left, GlobalBounds right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_GlobalBounds_op_Inequality_" data-uid="Holoride.ElasticSDK.GlobalBounds.op_Inequality*"></a>
+  <h4 id="Holoride_ElasticSDK_GlobalBounds_op_Inequality_Holoride_ElasticSDK_GlobalBounds_Holoride_ElasticSDK_GlobalBounds_" data-uid="Holoride.ElasticSDK.GlobalBounds.op_Inequality(Holoride.ElasticSDK.GlobalBounds,Holoride.ElasticSDK.GlobalBounds)">operator !=(GlobalBounds, GlobalBounds)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(GlobalBounds left, GlobalBounds right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>
