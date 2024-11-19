@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Blend Texture at Pose Heights | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Blend Texture at Pose Heights | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="blend-texture-at-pose-heights">Blend Texture at Pose Heights</h1>
+
+<h2 id="overview">Overview</h2>
+<p>A Blend Texture At Pose Heights node stamps a given texture at every passed Pose. The texture defines both the height that is written into the Map and how it blends with the Input Map height. An additional offset is added according to the Pose height.</p>
+<p><img src="../../../attachments/img/screenshots/Procedural-Generation/Nodes/BlendTextureAtPoseHeights/00_Overview.png" alt="A common graph for the Blend Texture At Pose Heights node">
+<img src="../../../attachments/img/screenshots/Procedural-Generation/Nodes/BlendTextureAtPoseHeights/pyramid.png" alt="The texture used in this example"></p>
+<h2 id="detailed-explanation">Detailed Explanation</h2>
+<p>Every Pose within the given <em>Pose Set</em> defines a place and rotation where to stamp the defined <em>Texture</em>. The <em>Scale</em> parameter defines the size of the stamp area (in x and z direction) centered around the Pose. The texture channels are split into two semantics, a <em>Height</em> semantic to define the texture's height values and a <em>Blending</em> semantic to define the texture's blend values according to the chosen <em>Channel Semantics</em>.</p>
+<p>The <em>Input</em> Map is then set to the texture's height value multiplied by <em>Scale.y</em>. That is, if <em>Scale.y</em> is set to 50, the whole range of the texture's height value is remapped to values between 0 and 50 height units, i.e. [0, 50]. The Pose's y-component adds another offset to the height. For example, a Pose p1 from the <em>Pose Set</em> with a p1.Position.Y value of 100 lifts the range to [100, 150] while a second Pose p2 with p2.Position.Y value of -200 drops the range down to [-200, -150].</p>
+<p>The <em>Blending</em> semantic eventually defines how the resulting height is lerped with the <em>Input</em> Map value: At places where the blend value is 0, the <em>Input</em> Map's height is remained while a value of 1 overwrites the <em>Input</em> Map value all-out. A blend value of 0.5 sets the resulting height to the exact middle height between the remapped texture sample and the <em>Input</em> Map's height.</p>
+<p>The <em>GrayScaleConversion</em> enum defines how float values between 0 and 1 are derived from the texture for each <em>Channel Semantic</em>. The options to choose from are:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R</td>
+<td>The red channel of the texture.</td>
+</tr>
+<tr>
+<td>G</td>
+<td>The green channel of the texture.</td>
+</tr>
+<tr>
+<td>B</td>
+<td>The blue channel of the texture.</td>
+</tr>
+<tr>
+<td>A</td>
+<td>The alpha channel of the texture.</td>
+</tr>
+<tr>
+<td>RGBAverage</td>
+<td>The average of red, green and blue computed as (r+g+b)/3.</td>
+</tr>
+<tr>
+<td>RGBToLuminance</td>
+<td>The brightness according to the color perception of the human eye.</td>
+</tr>
+<tr>
+<td>ConstantOne</td>
+<td>The value 1 at every pixel.</td>
+</tr>
+<tr>
+<td>ConstantZero</td>
+<td>The value 0 at every pixel.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="parameters">Parameters</h2>
+<h3 id="inputs">Inputs</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input</td>
+<td>Map</td>
+<td>The Map to blend with the texture stamps.</td>
+</tr>
+<tr>
+<td>Pose Set</td>
+<td>PoseSet</td>
+<td>The initial set of poses to define place, rotation and height offset of the stamp.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="controls">Controls</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Texture</td>
+<td>Texture</td>
+<td>The texture to stamp at every pose.</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>Vector3</td>
+<td>The scale of the stamped texture. X and Z component scale the extents of the texture while the Y component scales the Height value.</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>GrayScaleConversion</td>
+<td>Defines how the Height is retrieved in the texture.</td>
+</tr>
+<tr>
+<td>Blending</td>
+<td>GrayScaleConversion</td>
+<td>Defines how the Blending factor is retrieved in the texture.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="pre-defined-mountain-shapes">Pre-Defined Mountain Shapes</h3>
+<p><img src="../../../attachments/img/screenshots/Procedural-Generation/Nodes/BlendTextureAtPoseHeights/01_Example.png" alt="Blend Texture At Pose Heights for distinctive mountains"></p>
+<p>Although mountains can easily be generated with <a href="DistanceTransform.html">Distance Transform</a> and Perlin Noise nodes, distinctive mountain shapes can rather be achieved by using a heightmap sample via a Blend Texture At Pose Heights node. The poses to define the place should have a sufficient distance to the road. Therefore, we move Grid Poses using Translate Along Gradient and Remove Close Neighbors of those that appear too close to each other.</p>
+<h3 id="object-foundation">Object Foundation</h3>
+<p>The same poses can be used for both spawning prefabs via a Pose Set Spawner and flattening the ground underneath using Blend Texture At Pose Heights. A foundation texture that resembles the silhouette of the prefab makes a good foundation for the object. With the pose height snapped to the height map using <a href="SetHeightsByMap.html">Set Heights By Map</a>, it is also possible to carve plateaus into mountains - a perfect place for a fortress.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

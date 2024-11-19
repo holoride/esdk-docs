@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RecenterOffsetManager
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RecenterOffsetManager
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.RecenterOffsetManager">
+
+
+  <h1 id="Holoride_ElasticSDK_RecenterOffsetManager" data-uid="Holoride.ElasticSDK.RecenterOffsetManager" class="text-break">Class RecenterOffsetManager
+</h1>
+  <div class="markdown level0 summary"><p>
+Access to current recenter offset, i.e. the delta between headset
+forward direction and vehicle forward direction.
+</p>
+<p>
+This is relevant for headsets using 3-DoF tracking, since their tracking
+frame of reference is not local to the vehicle (as opposed to 6-dof),
+but in the same global space as the vehicle itself.
+</p>
+<p>
+We manage this offset manually to ensure consistent compatibility
+across different headsets.  For some there is no event to be notified
+when the user caused a system-driven recenter, for others there is no
+API to trigger a system-driven recenter.
+</p>
+<p>
+This manages the <em>application local</em> recenter offset, which may
+be different to the <em>global</em> recenter offset shared across
+multiple applications.  This is due to the fact that the application of
+the recenter offset depends on localization data, specifically the
+vehicle heading.  While the vehicle heading is not available, we must
+operate in an application local state, to still allow users to recenter.
+</p>
+<p>
+As such, we must be able to operate in the two states &quot;heading
+available&quot; and &quot;heading unavailable&quot;.  For the former, behavior is
+trivial, since we can apply new global recenter offset directly (sent
+from either drift mitigation, system driven user recenter logic, user
+recenter in other applications) and directly apply new global offset
+values.
+</p>
+<p>
+The &quot;heading unavailable&quot; state is more complex, as it introduces the
+need for temporary, local recenter offset values, while still:
+<ul>
+<li>keeping the last received global recenter offset so it can be
+applied as soon as global vehicle heading is available.</li>
+<li>keeping the local vehicle heading when applying a local recenter
+offset so we can compute the delta to the global recenter offset as soon
+as global vehicle heading is available.</li>
+</ul>
+
+<p>
+Once global vehicle heading becomes available, we can transform the
+pending global or local recenter offset, depending on which one is more
+recent:
+<ul>
+<li>local to global: add delta of local vehicle heading at time of
+setting local recenter offset to global vehicle heading.</li>
+<li>global to local: instantly apply pending global recenter offset.</li>
+</ul>
+The intuition here is that the global vehicle heading will be used once
+available, so the local heading &quot;snaps&quot; to the the global one, and as
+such any values computed in relation to it have to be adjusted as well.
+Whereas the global recenter offset is already in relation to the global
+vehicle heading.
+
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RecenterOffsetManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_RecenterOffsetManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RecenterOffsetManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_RecenterOffsetManager_CurrentRecenterOffset_" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.CurrentRecenterOffset*"></a>
+  <h4 id="Holoride_ElasticSDK_RecenterOffsetManager_CurrentRecenterOffset" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.CurrentRecenterOffset">CurrentRecenterOffset</h4>
+  <div class="markdown level1 summary"><p>
+Gets the current applicable recenter offset.
+</p>
+<p>
+This value may change slowly over time when applying small changes
+to account for headset sensor drift.  Depending on the current
+platform, such changes are detected automatically and applied to
+the global recenter offset to ensure the user continues to perceive
+forward as the vehicle forward direction.
+</p>
+<p>
+This value abstracts the &quot;heading available&quot; and &quot;heading
+unavailable&quot; states: it returns the local recenter offset while
+global vehicle heading is unavailable and the global recenter offset
+while global vehicle heading is available.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float CurrentRecenterOffset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_RecenterOffsetManager_ComputeAndUpdateRecenterOffset_" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.ComputeAndUpdateRecenterOffset*"></a>
+  <h4 id="Holoride_ElasticSDK_RecenterOffsetManager_ComputeAndUpdateRecenterOffset_System_Single_" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.ComputeAndUpdateRecenterOffset(System.Single)">ComputeAndUpdateRecenterOffset(float)</h4>
+  <div class="markdown level1 summary"><p>Computes and updates the current recenter offset based on the current headset rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ComputeAndUpdateRecenterOffset(float headsetHeadingAngle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">headsetHeadingAngle</span></td>
+        <td><p>The headset heading angle relative to the headset's internal coordinate system. In an XR rig, this value usually corresponds to Camera.main.transform.localEulerAngles.y.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_RecenterOffsetManager_RequestUserRecenter_" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.RequestUserRecenter*"></a>
+  <h4 id="Holoride_ElasticSDK_RecenterOffsetManager_RequestUserRecenter" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.RequestUserRecenter">RequestUserRecenter()</h4>
+  <div class="markdown level1 summary"><p>This delegates recenter operation to listeners, to avoid magic
+lookups of e.g. the main camera here.  Typically this will result
+in the Player component to perform a Vehicle.Recenter().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RequestUserRecenter()</code></pre>
+  </div>
+
+
+  <a id="Holoride_ElasticSDK_RecenterOffsetManager_UpdateRecenterOffset_" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.UpdateRecenterOffset*"></a>
+  <h4 id="Holoride_ElasticSDK_RecenterOffsetManager_UpdateRecenterOffset_System_Single_" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.UpdateRecenterOffset(System.Single)">UpdateRecenterOffset(float)</h4>
+  <div class="markdown level1 summary"><p>Updates the current recenter offset based on the current headset
+rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ComputeAndUpdateRecenterOffset which takes the headset heading angle (i.e. the local camera angle) rather than the angle between camera and vehicle as a parameter.&quot;, false)]
+public static void UpdateRecenterOffset(float headsetToVehicle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">headsetToVehicle</span></td>
+        <td><p>The current signed delta angle
+between headset forward direction and vehicle forward direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_RecenterOffsetManager_UserRecenterPerformed" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.UserRecenterPerformed">UserRecenterPerformed</h4>
+  <div class="markdown level1 summary"><p>Fired when a recenter operation by a user was performed.</p>
+<p>
+This can either be triggered locally via
+<a class="xref" href="Holoride.ElasticSDK.RecenterOffsetManager.html#Holoride_ElasticSDK_RecenterOffsetManager_ComputeAndUpdateRecenterOffset_System_Single_">ComputeAndUpdateRecenterOffset(float)</a> or via a backend / platform
+specific service where user recenter input is handled externally.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action UserRecenterPerformed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_RecenterOffsetManager_UserRecenterRequested" data-uid="Holoride.ElasticSDK.RecenterOffsetManager.UserRecenterRequested">UserRecenterRequested</h4>
+  <div class="markdown level1 summary"><p>Fired when a recenter operation should be performed, resulting in
+a call to <a class="xref" href="Holoride.ElasticSDK.RecenterOffsetManager.html#Holoride_ElasticSDK_RecenterOffsetManager_ComputeAndUpdateRecenterOffset_System_Single_">ComputeAndUpdateRecenterOffset(float)</a>.</p>
+<p>
+This is triggered by calls to <a class="xref" href="Holoride.ElasticSDK.RecenterOffsetManager.html#Holoride_ElasticSDK_RecenterOffsetManager_RequestUserRecenter">RequestUserRecenter()</a> and
+when external user recenter notifications are received but no
+global vehicle heading offset is available.  The latter is primarily
+relevant when in stationary mode or when no localization data is
+available, yet.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action UserRecenterRequested</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

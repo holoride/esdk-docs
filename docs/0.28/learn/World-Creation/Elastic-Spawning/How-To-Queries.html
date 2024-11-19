@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How-To: Write Map Queries | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How-To: Write Map Queries | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<div class="button-container">
+    <div class="align-left">
+        <a href="Pose-Based-Spawning.html" class="button button--text">&#10094; Pose Based Spawning</a>
+    </div>
+    <div class="align-right">
+        <a href="Poses-and-Gradients.html" class="button button--text">Poses & Gradients &#10095;</a>
+    </div>
+</div>
+<hr class="rounded">
+<h1 id="how-to-write-map-queries">How-To: Write Map Queries</h1>
+<p><code>Beginner | 30 mins | Everyone</code></p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="goal">Goal</h3>
+<p>In this guide we will learn how to write simple queries to retrieve real world object information.</p>
+<p><img src="../../../attachments/img/screenshots/How-To/OSMNodes/00_OSM_Node_Overview.png" alt="Some osm nodes"></p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>Familiarity with the node graph</li>
+</ul>
+<h3 id="learning-path">Learning Path</h3>
+<ol>
+<li><a href="#where-this-knowledge-is-used">Where this knowledge is used</a></li>
+<li><a href="#intro-to-overpassql">Intro to OverpassQL</a></li>
+<li><a href="#writing-queries-in-the-elasticsdk">Writing queries in the ElasticSDK</a></li>
+<li><a href="#summary">Summary</a></li>
+</ol>
+<h2 id="content">Content</h2>
+<h3 id="where-this-knowledge-is-used">Where this knowledge is used</h3>
+<p>To build more diverse and interesting environments we can use OpenStreetMap (OSM) nodes that allow us to fetch real
+world information. Using this information we can alter the world and add variation to it.</p>
+<p>Every node type can interact with the OSM in their own way. For example, the map node can display areas or outlines of
+areas that are tagged with specific keywords. Alternatively, we can simply use poses or a spawner to add some variation.</p>
+<h3 id="intro-to-overpassql">Intro to OverpassQL</h3>
+<p>To understand how OSM based nodes and their queries work we have a quick peek behind the curtain. The server is queried
+using a language called OverpassQL which can get fairly complex. Luckily the ElasticSDK simplifies this to reduce
+writing queries to the important parts.</p>
+<p>The following example shows how a full query might look like:</p>
+<pre><code class="lang-csharp">node
+  [highway=traffic_signals]
+  ({{bbox}});
+out;
+</code></pre>
+<p>To explore such queries we can use the website <a href="https://overpass-turbo.eu/">overpass-turbo</a> and get a feeling for what
+they return and iterate faster to our desired result.</p>
+<p>Going back to the query example, we have a look at the central elements of the query which we will later see in our
+OSM-based nodes.</p>
+<p>The keyword <code>node</code> means that the query will return objects that only have a single position. Other returned objects,
+such as buildings or parks, are generally represented using multiple points and are thus queried using the word <code>way</code>
+instead of <code>node</code>. When unsure which keyword a certain feature uses we can always check
+the <a href="https://wiki.openstreetmap.org/wiki/">OpenStreetMap wiki</a> pages to see what we can expect.</p>
+<p><img src="../../../attachments/img/screenshots/How-To/OSMNodes/01_OSM_Wiki.png" alt="OpenStreetMap wiki info box"></p>
+<p>The wiki page contains a small information box, that shows that traffic lights should be used only on nodes. In the
+taginfo box below we see that this is mostly correct and only a few entries are tagged incorrectly, which we can ignore.</p>
+<p>We are now querying for single positions but still need to define what exactly we are looking for. This is done using
+tag filters. In this example we have a tag filter, denoted by square brackets, and the term <code>highway=traffic_signals</code>.
+This tag marks nodes on OpenStreetMap that are traffic signals such as traffic lights, traffic signals or stop lights (
+see <a href="https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtraffic_signals">here</a>). We can explore existing tags using
+a <a href="https://taginfo.openstreetmap.org/">taginfo word cloud</a> or find something more specific by directly searching in
+the <a href="https://wiki.openstreetmap.org/wiki/">OpenStreetMap wiki</a>. In the wiki we also get the information on what
+data (<code>node</code>, <code>way</code>) we can expect from this tag.</p>
+<p>After the tag filter we see a filter, denoted by round brackets, that restricts the output. Generally we don't want to
+return data from the whole world but only the current area. The ElasticSDK will automatically do this for us which is
+why we can continue directly to the last part of the query.</p>
+<p>Lastly, we define what the query will return. In this case we want to use the positions of the nodes without additional
+steps. We can do this by using the <code>out</code> keyword. But in the case of buildings, they are usually described using ways,
+which includes multiple points instead of a single one. We need to collapse this group of points into a single point for
+example by calculating the center point of a building. OverpassQL offers this functionality by using the return
+type <code>out center</code>.</p>
+<p>After learning all this we can see the applications of this knowledge.</p>
+<h3 id="writing-queries-in-the-elasticsdk">Writing queries in the ElasticSDK</h3>
+<p>In this section we will take a look at the different OSM nodes in the ElasticSDK.</p>
+<p><img src="../../../attachments/img/screenshots/How-To/OSMNodes/02_OSMPoses.png" alt="OSM poses with different queries"></p>
+<p>We start with the <a href="../../../manual/Procedural-Generation/Nodes/OSMPoses.html"><em>OSM Poses</em></a> node that offers us to return poses
+from a map query. Since poses are represented using position (and rotation) which means that our query has to return
+either the <em>nodes</em> directly or the center point of a <em>way</em>. Depending on the query we have to select the correct return
+type below the text field containing the query. In case we want to combine the results of different queries we can also
+do that by simply adding more entries to the list.</p>
+<p><img src="../../../attachments/img/screenshots/How-To/OSMNodes/03_OSMSpawner.png" alt="OSM spawner with different queries"></p>
+<p>Similar to the OSM Poses node we can use the <em>OSM Spawner</em> to place prefabs at positions defined by OSM queries. As we
+have learned in the previous node we need to make sure our returned queries return positions either directly using nodes
+or indirectly by mapping it to the center of a way.</p>
+<p><img src="../../../attachments/img/screenshots/How-To/OSMNodes/04_OSMGeometryRasterizer.png" alt="OSM geometry rasterizer with different queries"></p>
+<p>Eventually, we have a look at a node that doesn't make use of poses but displays areas. Thus we make sure that our
+queries don't return single positions but ways that represent areas. In this example we display the shape of the
+buildings or the outline of a cemetery. As an inspiration, we can use queries like <code>leisure=park</code> or <code>landuse=forest</code> to
+query for parks or forests in the real world.</p>
+<h2 id="summary">Summary</h2>
+<p>In this guide we have learned how OpenStreetMap nodes work and peeked into their underlying query system. We understand
+how queries are written and what data they need to return to be used in the ElasticSDK.</p>
+<p>In the end we have seen some of the currently available OSM based nodes and explored a few example queries that we can
+use as inspiration to add more variation to the game world.</p>
+<hr class="rounded">
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Toying around with <a href="https://overpass-turbo.eu/">overpass-turbo</a> is a great way to explore queries and their tagged
+elements</li>
+<li>The <a href="https://wiki.openstreetmap.org/">OpenStreetMap wiki</a> pages are also a great help when trying to find the best
+tags or learn what you can expect from certain tagged objects or areas.</li>
+</ul>
+<hr class="rounded">
+<div class="button-container">
+    <div class="align-left">
+        <a href="Pose-Based-Spawning.html" class="button button--text">&#10094; Pose Based Spawning</a>
+    </div>
+    <div class="align-right">
+        <a href="Poses-and-Gradients.html" class="button button--text">Poses & Gradients &#10095;</a>
+    </div>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>
