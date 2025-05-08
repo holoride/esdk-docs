@@ -1,0 +1,1407 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Spline
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Spline
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.Spline">
+
+
+  <h1 id="Holoride_ElasticSDK_Spline" data-uid="Holoride.ElasticSDK.Spline" class="text-break">Class Spline
+</h1>
+  <div class="markdown level0 summary"><p>A spline class to provide infinitesimal pose information on a path defined by discrete positions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Spline</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_Spline_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Spline</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_Spline__ctor_" data-uid="Holoride.ElasticSDK.Spline.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline__ctor_System_Collections_Generic_IReadOnlyList_Holoride_ElasticSDK_GeoCoordinate__System_Int32_System_Single_System_Nullable_Holoride_ElasticSDK_GeoCoordinate__" data-uid="Holoride.ElasticSDK.Spline.#ctor(System.Collections.Generic.IReadOnlyList{Holoride.ElasticSDK.GeoCoordinate},System.Int32,System.Single,System.Nullable{Holoride.ElasticSDK.GeoCoordinate})">Spline(IReadOnlyList&lt;GeoCoordinate&gt;, int, float, GeoCoordinate?)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.Spline.html">Spline</a> class, prepares distance lookup table and
+performs filter operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spline(IReadOnlyList&lt;GeoCoordinate&gt; geoCoordinates, int distanceSamplesPerInterval = 10, float controlPointRatio = 0.3, GeoCoordinate? pivot = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a>&gt;</td>
+        <td><span class="parametername">geoCoordinates</span></td>
+        <td><p>A list of geoCoordinates to align a spline to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">distanceSamplesPerInterval</span></td>
+        <td><p>The number of samples per interval to add to the distance lookup-table. The value implies a
+trade-off between precision and cpu/memory consumption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">controlPointRatio</span></td>
+        <td><p>Controls spline smoothing. 0 = tight, 1 = smooth.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a>?</td>
+        <td><span class="parametername">pivot</span></td>
+        <td><p>The pivot to use when interpreting the provided coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline__ctor_" data-uid="Holoride.ElasticSDK.Spline.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline__ctor_System_Collections_Generic_List_Holoride_ElasticSDK_GlobalPosition__System_Int32_System_Single_" data-uid="Holoride.ElasticSDK.Spline.#ctor(System.Collections.Generic.List{Holoride.ElasticSDK.GlobalPosition},System.Int32,System.Single)">Spline(List&lt;GlobalPosition&gt;, int, float)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Holoride.ElasticSDK.Spline.html">Spline</a> class, prepares distance lookup table and
+performs filter operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spline(List&lt;GlobalPosition&gt; positions, int distanceSamplesPerInterval = 10, float controlPointRatio = 0.3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a>&gt;</td>
+        <td><span class="parametername">positions</span></td>
+        <td><p>A list of positions to align a spline to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">distanceSamplesPerInterval</span></td>
+        <td><p>The number of samples per interval to add to the distance lookup-table. The value implies a
+trade-off between precision and cpu/memory consumption.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">controlPointRatio</span></td>
+        <td><p>Controls spline smoothing. 0 = tight, 1 = smooth.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_Spline_Pivot" data-uid="Holoride.ElasticSDK.Spline.Pivot">Pivot</h4>
+  <div class="markdown level1 summary"><p>The Pivot this Spline was created with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GeoCoordinate Pivot</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GeoCoordinate.html">GeoCoordinate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_Spline_Length_" data-uid="Holoride.ElasticSDK.Spline.Length*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_Length" data-uid="Holoride.ElasticSDK.Spline.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the length of the spline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_SupportPointCount_" data-uid="Holoride.ElasticSDK.Spline.SupportPointCount*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_SupportPointCount" data-uid="Holoride.ElasticSDK.Spline.SupportPointCount">SupportPointCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of positions to define the spline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SupportPointCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_Spline_FindClosestDistance_" data-uid="Holoride.ElasticSDK.Spline.FindClosestDistance*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_FindClosestDistance_Holoride_ElasticSDK_GlobalPosition_System_Double_Holoride_ElasticSDK_RouteSegments_" data-uid="Holoride.ElasticSDK.Spline.FindClosestDistance(Holoride.ElasticSDK.GlobalPosition,System.Double,Holoride.ElasticSDK.RouteSegments)">FindClosestDistance(GlobalPosition, double, RouteSegments)</h4>
+  <div class="markdown level1 summary"><p>Finds the spline distance of the closest point to a given search position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double FindClosestDistance(GlobalPosition searchPosition, double stepDistance, RouteSegments searchRouteSegments = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">searchPosition</span></td>
+        <td><p>The position to search the closest distance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">stepDistance</span></td>
+        <td><p>The step distance. A smaller distance increases computation effort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.RouteSegments.html">RouteSegments</a></td>
+        <td><span class="parametername">searchRouteSegments</span></td>
+        <td><p>The optional interval to search within.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The distance of the spline point closest to the search position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_FindClosestPoseOnSpline_" data-uid="Holoride.ElasticSDK.Spline.FindClosestPoseOnSpline*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_FindClosestPoseOnSpline_Holoride_ElasticSDK_GlobalPosition_System_Double_Holoride_ElasticSDK_RouteSegments_" data-uid="Holoride.ElasticSDK.Spline.FindClosestPoseOnSpline(Holoride.ElasticSDK.GlobalPosition,System.Double,Holoride.ElasticSDK.RouteSegments)">FindClosestPoseOnSpline(GlobalPosition, double, RouteSegments)</h4>
+  <div class="markdown level1 summary"><p>Finds the closest position on a spline to a given search position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPose FindClosestPoseOnSpline(GlobalPosition searchPosition, double stepDistance, RouteSegments searchRouteSegments = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">searchPosition</span></td>
+        <td><p>The position to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">stepDistance</span></td>
+        <td><p>The step distance. A smaller distance increases computation effort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.RouteSegments.html">RouteSegments</a></td>
+        <td><span class="parametername">searchRouteSegments</span></td>
+        <td><p>The optional interval to search within.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPose.html">GlobalPose</a></td>
+        <td><p>The closest pose on the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_FindClosestPositionOnSupportLines_" data-uid="Holoride.ElasticSDK.Spline.FindClosestPositionOnSupportLines*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_FindClosestPositionOnSupportLines_Holoride_ElasticSDK_GlobalPosition_System_Double__" data-uid="Holoride.ElasticSDK.Spline.FindClosestPositionOnSupportLines(Holoride.ElasticSDK.GlobalPosition,System.Double@)">FindClosestPositionOnSupportLines(GlobalPosition, out double)</h4>
+  <div class="markdown level1 summary"><p>Finds the closest position between support points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPosition FindClosestPositionOnSupportLines(GlobalPosition searchPosition, out double sqrDistance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">searchPosition</span></td>
+        <td><p>The position to search the closest distance for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">sqrDistance</span></td>
+        <td><p>The minimum squared distance found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The closest position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_FindClosestRatio_" data-uid="Holoride.ElasticSDK.Spline.FindClosestRatio*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_FindClosestRatio_Holoride_ElasticSDK_GlobalPosition_System_Double_Holoride_ElasticSDK_RouteSegments_" data-uid="Holoride.ElasticSDK.Spline.FindClosestRatio(Holoride.ElasticSDK.GlobalPosition,System.Double,Holoride.ElasticSDK.RouteSegments)">FindClosestRatio(GlobalPosition, double, RouteSegments)</h4>
+  <div class="markdown level1 summary"><p>Finds the closest spline ratio to a given search position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double FindClosestRatio(GlobalPosition searchPosition, double stepDistance, RouteSegments searchRouteSegments = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">searchPosition</span></td>
+        <td><p>The position to search the closest distance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">stepDistance</span></td>
+        <td><p>The step distance. A smaller distance increases computation effort.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.RouteSegments.html">RouteSegments</a></td>
+        <td><span class="parametername">searchRouteSegments</span></td>
+        <td><p>The optional interval to search within.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed spline ratio.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_ForEachSupportPosition_" data-uid="Holoride.ElasticSDK.Spline.ForEachSupportPosition*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_ForEachSupportPosition_System_Action_Holoride_ElasticSDK_GlobalPosition_System_Double__" data-uid="Holoride.ElasticSDK.Spline.ForEachSupportPosition(System.Action{Holoride.ElasticSDK.GlobalPosition,System.Double})">ForEachSupportPosition(Action&lt;GlobalPosition, double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calls an action for each support position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEachSupportPosition(Action&lt;GlobalPosition, double&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The action to call. Contains the position and the distance on the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GenerateSimplifiedSplineByRadius_" data-uid="Holoride.ElasticSDK.Spline.GenerateSimplifiedSplineByRadius*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GenerateSimplifiedSplineByRadius_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GenerateSimplifiedSplineByRadius(System.Double)">GenerateSimplifiedSplineByRadius(double)</h4>
+  <div class="markdown level1 summary"><p>Generates a simplified spline based on this spline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spline GenerateSimplifiedSplineByRadius(double supportRadius)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">supportRadius</span></td>
+        <td><p>Defines the distance between the generated support positions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.Spline.html">Spline</a></td>
+        <td><p>The simplified spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetCurvatureAtDistance_" data-uid="Holoride.ElasticSDK.Spline.GetCurvatureAtDistance*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetCurvatureAtDistance_System_Double_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GetCurvatureAtDistance(System.Double,System.Double)">GetCurvatureAtDistance(double, double)</h4>
+  <div class="markdown level1 summary"><p>Gets the curvature at a specified distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetCurvatureAtDistance(double distance, double curvatureDistanceDelta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td><p>The distance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">curvatureDistanceDelta</span></td>
+        <td><p>The curvature distance delta.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><p>The curvature of the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetDistanceAtIndex_" data-uid="Holoride.ElasticSDK.Spline.GetDistanceAtIndex*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetDistanceAtIndex_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GetDistanceAtIndex(System.Double)">GetDistanceAtIndex(double)</h4>
+  <div class="markdown level1 summary"><p>Looks up the distance at a given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDistanceAtIndex(double index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index where to look at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed distance on the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetDistanceAtRatio_" data-uid="Holoride.ElasticSDK.Spline.GetDistanceAtRatio*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetDistanceAtRatio_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GetDistanceAtRatio(System.Double)">GetDistanceAtRatio(double)</h4>
+  <div class="markdown level1 summary"><p>Looks up the distance at a given ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDistanceAtRatio(double ratio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">ratio</span></td>
+        <td><p>The ratio where to look at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed distance on the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetDistanceAtSupportPoint_" data-uid="Holoride.ElasticSDK.Spline.GetDistanceAtSupportPoint*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetDistanceAtSupportPoint_System_Int32_" data-uid="Holoride.ElasticSDK.Spline.GetDistanceAtSupportPoint(System.Int32)">GetDistanceAtSupportPoint(int)</h4>
+  <div class="markdown level1 summary"><p>Looks up the distance at a given support point index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDistanceAtSupportPoint(int supportPointNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">supportPointNumber</span></td>
+        <td><p>The support point number where to look at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed distance on the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetIndexAtDistance_" data-uid="Holoride.ElasticSDK.Spline.GetIndexAtDistance*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetIndexAtDistance_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GetIndexAtDistance(System.Double)">GetIndexAtDistance(double)</h4>
+  <div class="markdown level1 summary"><p>Gets the index at a specific distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetIndexAtDistance(double distance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td><p>The distance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed spline index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetIndexAtRatio_" data-uid="Holoride.ElasticSDK.Spline.GetIndexAtRatio*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetIndexAtRatio_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GetIndexAtRatio(System.Double)">GetIndexAtRatio(double)</h4>
+  <div class="markdown level1 summary"><p>Looks up the index at a given ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetIndexAtRatio(double ratio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">ratio</span></td>
+        <td><p>The ratio where to look at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed index on the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetRatioAtDistance_" data-uid="Holoride.ElasticSDK.Spline.GetRatioAtDistance*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetRatioAtDistance_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GetRatioAtDistance(System.Double)">GetRatioAtDistance(double)</h4>
+  <div class="markdown level1 summary"><p>Gets the ratio at a specific distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRatioAtDistance(double distance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td><p>The distance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed spline ratio.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetRatioAtIndex_" data-uid="Holoride.ElasticSDK.Spline.GetRatioAtIndex*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetRatioAtIndex_System_Double_" data-uid="Holoride.ElasticSDK.Spline.GetRatioAtIndex(System.Double)">GetRatioAtIndex(double)</h4>
+  <div class="markdown level1 summary"><p>Looks up the ratio at a given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRatioAtIndex(double index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index where to look at.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The computed ratio on the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_GetSupportPosition_" data-uid="Holoride.ElasticSDK.Spline.GetSupportPosition*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_GetSupportPosition_System_Int32_" data-uid="Holoride.ElasticSDK.Spline.GetSupportPosition(System.Int32)">GetSupportPosition(int)</h4>
+  <div class="markdown level1 summary"><p>Returns a support position at a given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPosition GetSupportPosition(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the support position to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The support position at the given index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_ProjectRatioFromReferenceSpline_" data-uid="Holoride.ElasticSDK.Spline.ProjectRatioFromReferenceSpline*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_ProjectRatioFromReferenceSpline_Holoride_ElasticSDK_Spline_System_Double_System_Double_" data-uid="Holoride.ElasticSDK.Spline.ProjectRatioFromReferenceSpline(Holoride.ElasticSDK.Spline,System.Double,System.Double)">ProjectRatioFromReferenceSpline(Spline, double, double)</h4>
+  <div class="markdown level1 summary"><p>Computes the ratio of the position with the closest distance to the result of sampling a reference
+spline at a given ratio. This method is referred to as ratio projection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ProjectRatioFromReferenceSpline(Spline referenceSpline, double ratio, double errorMargin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.Spline.html">Spline</a></td>
+        <td><span class="parametername">referenceSpline</span></td>
+        <td><p>The reference spline.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">ratio</span></td>
+        <td><p>The ratio to project.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">errorMargin</span></td>
+        <td><p>The error margin. Beyond the margin distance, the result is precisely computed. A smaller margin
+increases computation effort.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The projected ratio.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_SampleAtDistance_" data-uid="Holoride.ElasticSDK.Spline.SampleAtDistance*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_SampleAtDistance_System_Double_System_Boolean_" data-uid="Holoride.ElasticSDK.Spline.SampleAtDistance(System.Double,System.Boolean)">SampleAtDistance(double, bool)</h4>
+  <div class="markdown level1 summary"><p>Samples the spline at a specific distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPose SampleAtDistance(double distance, bool oppositeDirection = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td><p>The distance in units where to sample the spline.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">oppositeDirection</span></td>
+        <td><p>States whether to return a pose in the opposite direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPose.html">GlobalPose</a></td>
+        <td><p>The doublePose (translation and rotation along the tangent) at the defined distance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_SampleAtDistance_" data-uid="Holoride.ElasticSDK.Spline.SampleAtDistance*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_SampleAtDistance_System_Double_System_Double__System_Boolean_" data-uid="Holoride.ElasticSDK.Spline.SampleAtDistance(System.Double,System.Double@,System.Boolean)">SampleAtDistance(double, out double, bool)</h4>
+  <div class="markdown level1 summary"><p>Samples the spline at a specific distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPose SampleAtDistance(double distance, out double controlPointIndex, bool oppositeDirection = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td><p>The distance in units where to sample the spline.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">controlPointIndex</span></td>
+        <td><p>The optional output of the interpolated control point index at the given distance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">oppositeDirection</span></td>
+        <td><p>States whether to return a pose in the opposite direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPose.html">GlobalPose</a></td>
+        <td><p>The doublePose (translation and rotation along the tangent) at the defined distance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_SampleAtIndex_" data-uid="Holoride.ElasticSDK.Spline.SampleAtIndex*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_SampleAtIndex_System_Double_System_Boolean_" data-uid="Holoride.ElasticSDK.Spline.SampleAtIndex(System.Double,System.Boolean)">SampleAtIndex(double, bool)</h4>
+  <div class="markdown level1 summary"><p>Samples the hermite spline at a specific index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPose SampleAtIndex(double sampleIndex, bool oppositeDirection = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td><p>The index between 0.0 and 1.0 where to sample the spline.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">oppositeDirection</span></td>
+        <td><p>States whether to return a pose in the opposite direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPose.html">GlobalPose</a></td>
+        <td><p>The doublePose (translation and rotation aligned with the tangent) at the given index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_SampleAtRatio_" data-uid="Holoride.ElasticSDK.Spline.SampleAtRatio*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_SampleAtRatio_System_Double_System_Boolean_" data-uid="Holoride.ElasticSDK.Spline.SampleAtRatio(System.Double,System.Boolean)">SampleAtRatio(double, bool)</h4>
+  <div class="markdown level1 summary"><p>Samples the hermite spline at a specific ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPose SampleAtRatio(double sampleRatio, bool oppositeDirection = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">sampleRatio</span></td>
+        <td><p>The ratio between 0.0 and 1.0 where to sample the spline.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">oppositeDirection</span></td>
+        <td><p>States whether to return a pose in the opposite direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPose.html">GlobalPose</a></td>
+        <td><p>The double precision pose (translation and rotation aligned with the tangent) at the given ratio.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_SamplePositionAtIndex_" data-uid="Holoride.ElasticSDK.Spline.SamplePositionAtIndex*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_SamplePositionAtIndex_System_Double_" data-uid="Holoride.ElasticSDK.Spline.SamplePositionAtIndex(System.Double)">SamplePositionAtIndex(double)</h4>
+  <div class="markdown level1 summary"><p>Samples the hermite spline at a specific index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalPosition SamplePositionAtIndex(double sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td><p>The index between 0.0 and 1.0 where to sample the spline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><p>The position at the given index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_Scale_" data-uid="Holoride.ElasticSDK.Spline.Scale*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_Scale_System_Double_" data-uid="Holoride.ElasticSDK.Spline.Scale(System.Double)">Scale(double)</h4>
+  <div class="markdown level1 summary"><p>Scales the spline by a given factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Scale(double factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">factor</span></td>
+        <td><p>The factor to scale the spline with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_Spline_ToString_" data-uid="Holoride.ElasticSDK.Spline.ToString*"></a>
+  <h4 id="Holoride_ElasticSDK_Spline_ToString" data-uid="Holoride.ElasticSDK.Spline.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

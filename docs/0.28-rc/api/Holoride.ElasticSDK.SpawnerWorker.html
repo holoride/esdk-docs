@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SpawnerWorker
+ | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SpawnerWorker
+ | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  <meta property="docfx:rel" content="../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg no-lightbox" src="../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Holoride.ElasticSDK.SpawnerWorker">
+
+
+  <h1 id="Holoride_ElasticSDK_SpawnerWorker" data-uid="Holoride.ElasticSDK.SpawnerWorker" class="text-break">Class SpawnerWorker
+</h1>
+  <div class="markdown level0 summary"><p>The base class to spawn objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html">PipelineWorkerBase</a></div>
+    <div class="level2"><span class="xref">SpawnerWorker</span></div>
+      <div class="level3"><a class="xref" href="Holoride.ElasticSDK.Graph.Spawners.SpawnerNode.SpawnerWorker-1.html">SpawnerNode.SpawnerWorker&lt;T&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html">IPipelineWorker</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_GenerationSettings">PipelineWorkerBase.GenerationSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_GenerationState">PipelineWorkerBase.GenerationState</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CurrentGenerationContext">PipelineWorkerBase.CurrentGenerationContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_Pipeline">PipelineWorkerBase.Pipeline</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_IsGatheringResources">PipelineWorkerBase.IsGatheringResources</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_IsProcessing">PipelineWorkerBase.IsProcessing</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_Inputs">PipelineWorkerBase.Inputs</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_MissingMandatoryInputs">PipelineWorkerBase.MissingMandatoryInputs</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_AddMissingMandatoryInput_System_String_">PipelineWorkerBase.AddMissingMandatoryInput(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_HasMissingMandatoryInputInHierarchy">PipelineWorkerBase.HasMissingMandatoryInputInHierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_AddInput_System_String_Holoride_ElasticSDK_IPipelineWorker_">PipelineWorkerBase.AddInput(string, IPipelineWorker)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_GetInput_System_String_">PipelineWorkerBase.GetInput(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_GetInput__1_System_String_">PipelineWorkerBase.GetInput&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_InitResources">PipelineWorkerBase.InitResources()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallInitResources">PipelineWorkerBase.CallInitResources()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_Init">PipelineWorkerBase.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_GatherResourcesAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_">PipelineWorkerBase.GatherResourcesAsync(GenerationContext, IProgress&lt;float&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallGatherResourcesAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_">PipelineWorkerBase.CallGatherResourcesAsync(GenerationContext, IProgress&lt;float&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_ProcessAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_">PipelineWorkerBase.ProcessAsync(GenerationContext, IProgress&lt;float&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallProcessAsync_Holoride_ElasticSDK_GenerationContext_System_IProgress_System_Single__System_Threading_CancellationToken_">PipelineWorkerBase.CallProcessAsync(GenerationContext, IProgress&lt;float&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CleanUp">PipelineWorkerBase.CleanUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallCleanUp">PipelineWorkerBase.CallCleanUp()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Holoride</span>.<a class="xref" href="Holoride.ElasticSDK.html">ElasticSDK</a></h6>
+  <h6><strong>Assembly</strong>: Holoride.ElasticSDK.Library.Runtime.dll</h6>
+  <h5 id="Holoride_ElasticSDK_SpawnerWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public abstract class SpawnerWorker : PipelineWorkerBase, IPipelineWorker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker__ctor_" data-uid="Holoride.ElasticSDK.SpawnerWorker.#ctor*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker__ctor_System_Double_System_Single_System_Boolean_" data-uid="Holoride.ElasticSDK.SpawnerWorker.#ctor(System.Double,System.Single,System.Boolean)">SpawnerWorker(double, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a SpawnerWorker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpawnerWorker(double cellSize, float extents, bool isUnconstrained)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cellSize</span></td>
+        <td><p>The edge length of each squared cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">extents</span></td>
+        <td><p>The extents around the players position, defining the area where the objects are spawned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isUnconstrained</span></td>
+        <td><p>Whether this spawner uses unconstrained extents. Spawners using unconstrained extents may have extents
+larger than the extents of the generator (and thus the area covered by maps). As such, unclamped spawners
+should not rely on map data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_CellSize" data-uid="Holoride.ElasticSDK.SpawnerWorker.CellSize">CellSize</h4>
+  <div class="markdown level1 summary"><p>The edge length of each squared cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly double CellSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_IsUnconstrained" data-uid="Holoride.ElasticSDK.SpawnerWorker.IsUnconstrained">IsUnconstrained</h4>
+  <div class="markdown level1 summary"><p>Whether the extents of this spawner are always unclamped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsUnconstrained</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_OnGameObjectsCreated" data-uid="Holoride.ElasticSDK.SpawnerWorker.OnGameObjectsCreated">OnGameObjectsCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;List&lt;GameObject&gt;&gt; OnGameObjectsCreated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_Bounds_" data-uid="Holoride.ElasticSDK.SpawnerWorker.Bounds*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_Bounds" data-uid="Holoride.ElasticSDK.SpawnerWorker.Bounds">Bounds</h4>
+  <div class="markdown level1 summary"><p>Gets the current bounds of this spawner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalBounds Bounds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_DiscreteRadius_" data-uid="Holoride.ElasticSDK.SpawnerWorker.DiscreteRadius*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_DiscreteRadius" data-uid="Holoride.ElasticSDK.SpawnerWorker.DiscreteRadius">DiscreteRadius</h4>
+  <div class="markdown level1 summary"><p>Gets the radius after discretization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DiscreteRadius { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_Extents_" data-uid="Holoride.ElasticSDK.SpawnerWorker.Extents*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_Extents" data-uid="Holoride.ElasticSDK.SpawnerWorker.Extents">Extents</h4>
+  <div class="markdown level1 summary"><p>Gets the extents around the players position, defining the area where the objects are spawned.
+Attempts to return clamped extents for the currently used <a class="xref" href="Holoride.ElasticSDK.GenerationSettings.html">GenerationSettings</a>.
+Returns raw, unclamped extents if no settings are available (e.g. worker not in a pipeline).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Extents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_MayUpdateMovingGrid_" data-uid="Holoride.ElasticSDK.SpawnerWorker.MayUpdateMovingGrid*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_MayUpdateMovingGrid" data-uid="Holoride.ElasticSDK.SpawnerWorker.MayUpdateMovingGrid">MayUpdateMovingGrid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool MayUpdateMovingGrid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_QuantityInitEstimation_" data-uid="Holoride.ElasticSDK.SpawnerWorker.QuantityInitEstimation*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_QuantityInitEstimation" data-uid="Holoride.ElasticSDK.SpawnerWorker.QuantityInitEstimation">QuantityInitEstimation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the precomputed quantity that should be initialized
+by an <see cref="!:IPrefabInstantiationProvider"></see> Init() call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int QuantityInitEstimation { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_CallInit_" data-uid="Holoride.ElasticSDK.SpawnerWorker.CallInit*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_CallInit" data-uid="Holoride.ElasticSDK.SpawnerWorker.CallInit">CallInit()</h4>
+  <div class="markdown level1 summary"><p>Initializes this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed void CallInit()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_CallInit">PipelineWorkerBase.CallInit()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_CellKeyToBounds_" data-uid="Holoride.ElasticSDK.SpawnerWorker.CellKeyToBounds*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_CellKeyToBounds_UnityEngine_Vector2Int_" data-uid="Holoride.ElasticSDK.SpawnerWorker.CellKeyToBounds(UnityEngine.Vector2Int)">CellKeyToBounds(Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Helper function to compute the bounds of a cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalBounds CellKeyToBounds(Vector2Int cellKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">cellKey</span></td>
+        <td><p>The cell key to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalBounds.html">GlobalBounds</a></td>
+        <td><p>The bounds of the cell.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_ComputeCellKeyFromPosition_" data-uid="Holoride.ElasticSDK.SpawnerWorker.ComputeCellKeyFromPosition*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_ComputeCellKeyFromPosition_Holoride_ElasticSDK_GlobalPosition_" data-uid="Holoride.ElasticSDK.SpawnerWorker.ComputeCellKeyFromPosition(Holoride.ElasticSDK.GlobalPosition)">ComputeCellKeyFromPosition(GlobalPosition)</h4>
+  <div class="markdown level1 summary"><p>Hashes the position coordinates to receive a discrete cell key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int ComputeCellKeyFromPosition(GlobalPosition position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The position to hash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><p>The discrete cell key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_DestroyAllCells_" data-uid="Holoride.ElasticSDK.SpawnerWorker.DestroyAllCells*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_DestroyAllCells" data-uid="Holoride.ElasticSDK.SpawnerWorker.DestroyAllCells">DestroyAllCells()</h4>
+  <div class="markdown level1 summary"><p>Destroys all currently existing spawned game objects and clears the internal cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DestroyAllCells()</code></pre>
+  </div>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_DestroyCell_" data-uid="Holoride.ElasticSDK.SpawnerWorker.DestroyCell*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_DestroyCell_System_Collections_Generic_IEnumerable_UnityEngine_GameObject__" data-uid="Holoride.ElasticSDK.SpawnerWorker.DestroyCell(System.Collections.Generic.IEnumerable{UnityEngine.GameObject})">DestroyCell(IEnumerable&lt;GameObject&gt;)</h4>
+  <div class="markdown level1 summary"><p>Destroys all objects within a cell by destroying them. Override this function to treat disappearing
+objects differently, e.g. to return them to an object pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DestroyCell(IEnumerable&lt;GameObject&gt; gameObjects)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a>&gt;</td>
+        <td><span class="parametername">gameObjects</span></td>
+        <td><p>The game objects to destroy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_Dispose_" data-uid="Holoride.ElasticSDK.SpawnerWorker.Dispose*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_Dispose" data-uid="Holoride.ElasticSDK.SpawnerWorker.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Holoride.ElasticSDK.PipelineWorkerBase.html#Holoride_ElasticSDK_PipelineWorkerBase_Dispose">PipelineWorkerBase.Dispose()</a></div>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_EvaluateSpawnCandidate_" data-uid="Holoride.ElasticSDK.SpawnerWorker.EvaluateSpawnCandidate*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_EvaluateSpawnCandidate_System_Int32_Holoride_ElasticSDK_GlobalPosition_System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.SpawnerWorker.EvaluateSpawnCandidate(System.Int32,Holoride.ElasticSDK.GlobalPosition,System.Threading.CancellationToken)">EvaluateSpawnCandidate(int, GlobalPosition, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual UniTask&lt;GameObject&gt; EvaluateSpawnCandidate(int seed, GlobalPosition globalPosition, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">globalPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask&lt;T&gt;</span>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_MoveSpawnPosition_" data-uid="Holoride.ElasticSDK.SpawnerWorker.MoveSpawnPosition*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_MoveSpawnPosition_Holoride_ElasticSDK_GlobalPosition_System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.SpawnerWorker.MoveSpawnPosition(Holoride.ElasticSDK.GlobalPosition,System.Threading.CancellationToken)">MoveSpawnPosition(GlobalPosition, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Moves the spawn position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask MoveSpawnPosition(GlobalPosition position, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Holoride.ElasticSDK.GlobalPosition.html">GlobalPosition</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The position to move to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Holoride_ElasticSDK_SpawnerWorker_SpawnCell_" data-uid="Holoride.ElasticSDK.SpawnerWorker.SpawnCell*"></a>
+  <h4 id="Holoride_ElasticSDK_SpawnerWorker_SpawnCell_UnityEngine_Vector2Int_System_Collections_Generic_IList_UnityEngine_GameObject__System_Threading_CancellationToken_" data-uid="Holoride.ElasticSDK.SpawnerWorker.SpawnCell(UnityEngine.Vector2Int,System.Collections.Generic.IList{UnityEngine.GameObject},System.Threading.CancellationToken)">SpawnCell(Vector2Int, IList&lt;GameObject&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Implement to spawn all objects within the given cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract UniTask SpawnCell(Vector2Int cellKey, IList&lt;GameObject&gt; spawnedObjects, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">cellKey</span></td>
+        <td><p>The cell key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a>&gt;</td>
+        <td><span class="parametername">spawnedObjects</span></td>
+        <td><p>The list to which to add all objects that were spawned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Holoride.ElasticSDK.IPipelineWorker.html">IPipelineWorker</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/holoride.js"></script>
+    <script type="text/javascript" src="../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>

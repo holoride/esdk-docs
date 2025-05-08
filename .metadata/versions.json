@@ -3,6 +3,9 @@
     "0.27": {
       "SemanticVersion": "0.27.1"
     },
+    "0.28-rc": {
+      "SemanticVersion": "0.28.1-rc.1"
+    },
     "0.28": {
       "SemanticVersion": "0.28.0"
     }

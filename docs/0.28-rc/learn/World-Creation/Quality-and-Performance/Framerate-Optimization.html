@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Framerate Optimization | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Framerate Optimization | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<div class="button-container">
+    <div class="align-left">
+        <a href="Scene-Generation-and-Update-Time.html" class="button button--text">&#10094; Scene Generation & Update Time</a>
+    </div>
+    <div class="align-right">
+        <a href="Object-Pooling.html" class="button button--text">Object Pooling &#10095;</a>
+    </div>
+</div>
+<hr class="rounded">
+<h2 id="framerate-optimization">Framerate Optimization</h2>
+<h3 id="visual-range">Visual Range</h3>
+<p>There are some considerations to be taken into account when optimizing an elastic scene with respect to the framerate. The most important setting is the extents parameter every Spawner provides. Decreasing the extents by 50% leads to about a quarter the amount of objects, but the smaller the extents, the more obviously objects will popup from nowhere. However, popups can be concealed using techniques such as fade-in (from fog), fly-in, scale-in, etc.. Also the terrain can be spawned with reduced extents by using the <em>quarter size terrain</em> option on the ElasticSceneGenerator. Note that this option does not quarter the data that is processed underneath so you still maintain control over Poses, Spawners and Map data of the ElasticSceneGenerator's full extents.</p>
+<ul>
+<li>Decrease the extents of Spawners and find other methods to conceal popup-effects.</li>
+<li>Try the <em>quarter size terrain</em> option on the ElasticSceneGenerator.</li>
+</ul>
+<h3 id="spawner-tweaks">Spawner Tweaks</h3>
+<p>There are strategies to optimize more Spawners more specifically. Using the distance transform on the road mask gives you an idea how close objects can potentially appear as the vehicle drives by. If the potential minimum distance to the road is large enough, objects don't need to be as detailed. Even billboards do a great job in the distance. Avoid spawning too many objects in general. Combining objects in one single prefab is a good idea to avoid unnecessary operations. To wrap it up, the framerate benefits from the following best practices:</p>
+<ul>
+<li>Spawn extra simple objects like billboards at places the vehicle cannot get close to.</li>
+<li>Combine objects and spawn multiple objects with a single Spawner if possible.</li>
+</ul>
+<p>Furthermore, If the objects to spawn are very dense (i.e. less than 20 meters apart), like rocks, grass, trees or other scene decoration, it makes sense to use the <em>GridSpawner</em> instead of a <em>PoseSetSpawner</em> which is less versatile but way faster in processing. The <em>GridSpawner</em> still provides options to randomize object transforms, set the height by a Map, mask permitted regions and select from different prefabs by using a PickPrefab* node.</p>
+<ul>
+<li>For dense decoration objects, replace <em>PoseSetSpawners</em> by <em>GridSpawners</em>.</li>
+</ul>
+<p>Further general optimizations on objects to be spawned are:</p>
+<ul>
+<li>Make good use of Unity's LOD system for GameObjects.</li>
+<li>If you have to spawn many objects using the same mesh data, activate GPU instancing.</li>
+<li>Avoid scripts with heavy update methods.</li>
+<li>Revisit the physics settings of the objects. Can unnecessary rigidbodies and colliders be removed?</li>
+</ul>
+<h3 id="overdraw-mitigation">Overdraw Mitigation</h3>
+<p>Overdraw is another big topic. Rasterized geometry should overlap as rarely as possible. Even an early z-test of opaque objects has impact on the performance - especially if the triangles cannot be sorted and end up being rendered back-to-front, overdrawing the depth buffer multiple times. Therefore, all objects should be optimized to not contain hidden geometry under the opaque surface. This also counts for the generated terrain. The more hills and valleys are generated between the camera and the horizon the more overdraw happens. Using the distance transform on the road mask lets you determine regions that are rather far away from the road. Those regions should be as smooth as possible without alternating heights if you won't see them anyway behind the rows of hills next to the road. To mitigate the workload needed for the rasterization process/step mind the following:</p>
+<ul>
+<li>Refine every object geometry by eliminating hidden surfaces that are't visible but will still be rasterized.</li>
+<li>When using a terrain, avoid hills that are never visible.</li>
+</ul>
+<h3 id="rendering-optimizations">Rendering Optimizations</h3>
+<p>The Elastic SDK is independent from the actual render pipeline and therefore doesn't add any options beside the selection of the terrain shader. Still, the biggest impact on the framerate in most VR applications has the render pipeline with shader operations in particular. Fragment operations have the largest computational share and are the first address to start optimizing. Especially on mobile VR devices that usually come with large pixel resolutions, the fragment shader should be as lightweight as possible. Hence, when choosing your art style, you should mind the following guidelines:</p>
+<ul>
+<li>Reduce dynamic lighting effects to a minimum by baking shadows and highlights into textures.</li>
+<li>Choose an art style that is not depending on too many texture layers (including normal or gloss textures).</li>
+<li>Use as few terrain layers as possible with 4 as the maximum number.</li>
+<li>Only use the diffuse texture for terrain layers.</li>
+<li>Reduce texture sizes to a bearable minimum.</li>
+<li>Avoid transparency.</li>
+<li>Don't make use of post-processing effects.</li>
+<li>Don't use shaders with multiple render passes.</li>
+</ul>
+<h3 id="resolution-trade-offs">Resolution Trade-Offs</h3>
+<p>There are other strategies to decrease the global fragment output such as using a lower resolution render target. While decreasing the render resolution and up-scaling the render buffer is an effective solution to generally reduce the fragment count and therefore drastically speed up the framerate, it leads to unwanted pixelization. The quality loss is particularly noticeable with fine lines such as display text. Anti-aliasing is a good way to conceal some of the low resolution artifacts and some art styles even benefit from a lower output resolution with therefore anti-aliased edges. However, since anti-aliasing isn't cheap either, this trade-off should be carefully decided. Foveated rendering, as often provided by the HMD's SDK, is a technique to reduce the pixel resolution in the peripheral view only and is therefore a recommended trade-off for VR experiences you definitely should consider activating. As a summary, mind the following guidelines:</p>
+<ul>
+<li>Find a trade-off between decreased output resolution and increased anti-aliasing.</li>
+<li>Make use of foveated rendering if provided by the HMD.</li>
+</ul>
+<h3 id="other-savings">Other Savings</h3>
+<p>Last but not least, some global options have impact on the performance as well. Double check the following settings for maxing the framerate:</p>
+<ul>
+<li>Revisit Unity's physics settings. Disable <em>Auto Sync Transforms</em> if it doesn't induce collision accuracy problems as the car moves fast (it may also disturb UI interaction).</li>
+<li>The build should not be a debug build and no profiler should be attached.</li>
+<li>The stack trace should be disabled when logging.</li>
+</ul>
+<hr class="rounded">
+<div class="button-container">
+    <div class="align-left">
+        <a href="Scene-Generation-and-Update-Time.html" class="button button--text">&#10094; Scene Generation & Update Time</a>
+    </div>
+    <div class="align-right">
+        <a href="Object-Pooling.html" class="button button--text">Object Pooling &#10095;</a>
+    </div>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>
