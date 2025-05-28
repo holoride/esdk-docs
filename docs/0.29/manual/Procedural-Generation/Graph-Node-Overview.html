@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Graph Node Overview | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Graph Node Overview | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  <meta property="docfx:rel" content="../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="graph-node-overview">Graph Node Overview</h2>
+
+<h3 id="map-sources">Map Sources</h3>
+<p>Creates a map (of float values) of the environment. It can be used to generate terrain if used as a height map, to filter spawned objects, or as an input for several other nodes.</p>
+<p><strong>Info:</strong> The maps are visualized in a black/white/blue manner. White is always the maximum value (does not have to be “1”), and black always represents the minimum value (does not have to be “0”). Shades of blue are used for negative values.</p>
+<p>All these nodes generate “Map” data types:</p>
+<h4 id="constant-value">Constant Value</h4>
+<p><img src="../../attachments/img/screenshots/node_constant.png" alt=""></p>
+<p>Outputs a map with a constant value.</p>
+<h4 id="constant-one">Constant One</h4>
+<p><img src="../../attachments/img/screenshots/node_constant_one.png" alt=""></p>
+<p>Outputs a map with only “1”s.</p>
+<h4 id="constant-texture">Constant Texture</h4>
+<p><img src="../../attachments/img/screenshots/node_constant_texture.png" alt=""></p>
+<p>Outputs a defined texture as a map.</p>
+<h4 id="constant-zero">Constant Zero</h4>
+<p><img src="../../attachments/img/screenshots/node_constant_zero.png" alt=""></p>
+<p>Outputs a map with only “0”s.</p>
+<h4 id="terrain-elevation">Terrain Elevation</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/TerrainElevation/00_Overview.png" alt="Terrain Elevation node"></p>
+<p>The height map of the earth surface retrieved from satellite images. Note that neither tunnels nor bridges are contained. Additionally, the map is not detailed enough to foresee the vehicle’s altitude.</p>
+<h4 id="perlin-noise">Perlin Noise</h4>
+<p><img src="../../attachments/img/screenshots/node_perlin_noise.png" alt=""></p>
+<p>Outputs a perlin noise.</p>
+<p><strong>Example Use Case:</strong>
+Adding synthetic variety by either adding or multiplying perlin noise to another image.</p>
+<h4 id="pose-set-rasterizer">Pose Set Rasterizer</h4>
+<p><img src="../../attachments/img/screenshots/node_pose_set_rasterizer.png" alt=""></p>
+<p>This node transforms a “pose set” into a map. This node is very helpful for visualization/preview purposes in the graph.</p>
+<p><strong>Example Use Case:</strong>
+Using the distance transform to get the distances to the closest pose.</p>
+<h4 id="osm-geometry-rasterizer">OSM Geometry Rasterizer</h4>
+<p><img src="../../attachments/img/screenshots/node_osm_rasterizer.png" alt=""></p>
+<p>Returns a “black and white” image of where the queried entities are. The results can either be drawn filled or as an outline.<br>
+<strong>Info:</strong> Geometry that is not closed (roads) but drawn with the filled style will result in odd looking shapes.</p>
+<p><strong>Example Use Case:</strong>
+Using the park query to only allow spawning of trees in this permitted area and feeding it into a grass texture layer.</p>
+<h4 id="road-network-mask">Road Network Mask</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/RoadNetworkMask/00_Overview.png" alt="Road Network Mask Node"></p>
+<p>➞ Visit the <a href="Nodes/RoadNetworkMask.html">in depth page</a></p>
+<h4 id="blend-texture-at-pose-heights">Blend Texture At Pose Heights</h4>
+<p><img src="../../attachments/img/screenshots/node_blend_texture.png" alt=""></p>
+<p>Blends a given texture at the positions of a set of poses with the input map and returns the blended map.
+Height and Alpha channel can be chosen from the source texture.
+A scale factor is multiplied with the xz-scale as well the height of the blended pattern.</p>
+<blockquote>
+<p>Note: The Height channel is added to the poses' y-positions and then blended with the input map's height data.</p>
+</blockquote>
+<p><strong>Example Use Case:</strong>
+Used to blend patterns from a texture with an existing terrain map. The texture can incorporate a channel for actual height values as well as a channel for alpha blending values.</p>
+<h3 id="map-modifiers">Map Modifiers</h3>
+<p>Map operators are a set of nodes used to modify “Maps” in different ways.</p>
+<h4 id="blur">Blur</h4>
+<p><img src="../../attachments/img/screenshots/node_blur.png" alt=""></p>
+<p>Adds blur to the “black and white” image.</p>
+<p><strong>Example Use Case:</strong>
+Smoothing edges to let values fade into each other.</p>
+<h4 id="convolute">Convolute</h4>
+<p><img src="../../attachments/img/screenshots/node_convolute.png" alt=""></p>
+<p>A custom convolution.
+<a href="https://en.wikipedia.org/wiki/Convolution">https://en.wikipedia.org/wiki/Convolution</a></p>
+<p><strong>Example Use Case:</strong>
+Using a Sobel filter kernel to highlight edges.
+<a href="https://en.wikipedia.org/wiki/Sobel_operator">https://en.wikipedia.org/wiki/Sobel_operator</a></p>
+<h4 id="distance-transform">Distance Transform</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/DistanceTransform/00_Overview.png" alt="Distance Transform Node"></p>
+<p>➞ Visit the <a href="Nodes/DistanceTransform.html">in depth page</a></p>
+<h4 id="math">Math</h4>
+<p>Feel free to explore the possibilities!</p>
+<h4 id="remap">Remap</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/Remap/00_Overview.png" alt="Remap Node"></p>
+<p>➞ Visit the <a href="Nodes/Remap.html">in depth page</a></p>
+<h4 id="normal-projection-evaluator">Normal Projection Evaluator</h4>
+<p><img src="../../attachments/img/screenshots/node_normal_projection_evaluator.png" alt=""></p>
+<p>Computes the dot-product between the given normal and the derived input image at every position.</p>
+<p><strong>Example Use Case:</strong>
+Evaluating how steep the slope of a hill is in order to, say, put trees on top and stones at the side of the hill.</p>
+<h4 id="scale">Scale</h4>
+<p><img src="../../attachments/img/screenshots/node_scale.png" alt=""></p>
+<p>Scales the map values by a given factor.</p>
+<h3 id="pose-set-sources">Pose Set Sources</h3>
+<p>Pose sets define a group of positions. They are usually used as a preprocessing step to spawners as there are several nodes to modify the poses before spawning objects based on a pose set.</p>
+<p>All these nodes generate “PoseSet” data types:</p>
+<h4 id="grid-poses">Grid Poses</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/GridPoses/00_Overview.png" alt=""></p>
+<p>The Grid Poses node generates an even grid of poses.</p>
+<h4 id="osm-poses">OSM Poses</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/OSMPoses/00_Overview.png" alt="OSM Poses Node"></p>
+<p>➞ Visit the <a href="Nodes/OSMPoses.html">in depth page</a></p>
+<h4 id="road-network-poses">Road Network Poses</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/RoadNetworkPoses/00_Overview.png" alt="Road Network Poses Node"></p>
+<p>➞ Visit the <a href="Nodes/RoadNetworkPoses.html">in depth page</a></p>
+<h3 id="pose-set-modifiers">Pose Set Modifiers</h3>
+<p>There are a variety of nodes to process the generated pose sets.</p>
+<h4 id="add-random-rotation">Add Random Rotation</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/AddRandomRotation/00_Add_Random_Rotation_Node.png" alt=""></p>
+<p>Randomly rotates the generated poses.</p>
+<h4 id="add-random-translation">Add Random Translation</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/AddRandomTranslation/00_Add_Random_Translation_Node.png" alt=""></p>
+<p>Randomly translates/shifts the generated poses.</p>
+<h4 id="remove-by-map">Remove By Map</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/RemoveByMap/00_Remove_By_Map_Node.png" alt=""></p>
+<p>Uses a map to remove/mask certain poses.</p>
+<p><strong>Example Use Case:</strong>
+You want to spawn coins on the road, but based on the road width, you want to have more of them. Then you can combine it with the Grid Positions node like in the example above.</p>
+<h4 id="remove-close-neighbours">Remove Close Neighbours</h4>
+<p><img src="../../attachments/img/screenshots/node_remove_close_neighbours.png" alt=""></p>
+<p>Removes poses that are closer than the defined distance.</p>
+<p><strong>Example Use Case:</strong>
+Cleaning up your poses to make them less dense.
+RotateTowardsGradientDirection</p>
+<p>Rotates poses depending on the gradient.</p>
+<p><strong>Example Use Case:</strong>
+Rotating spawned objects toward a road.</p>
+<h4 id="translate-along-gradient">Translate Along Gradient</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/TranslateAlongGradient/00_Translate_Along_Gradient_Node.png" alt=""></p>
+<p>Move poses in the direction provided by a gradient.</p>
+<p><strong>Example Use Case:</strong>
+Moving spawned objects away from the road.</p>
+<h4 id="set-heights-by-map">Set Heights By Map</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/SetHeightsByMap/00_Overview.png" alt="Set Heights by Map Node"></p>
+<p>➞ Visit the <a href="Nodes/SetHeightsByMap.html">in depth page</a></p>
+<h4 id="unify-poses">Unify Poses</h4>
+<p><img src="../../attachments/img/screenshots/node_unify_poses.png" alt=""></p>
+<p>The Unify Poses node fuses multiple pose sets to one.</p>
+<p><strong>Example Use Case:</strong>
+Cleaning up / simplifying your graph.</p>
+<h3 id="portals">Portals</h3>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/Portals/00_Overview.png" alt="Portal Nodes"></p>
+<p>➞ Visit the <a href="Nodes/Portals.html">in depth page</a></p>
+<h3 id="spawners">Spawners</h3>
+<p>As the name indicates, spawners are the node type to spawn prefabs and game objects in your scene based on different rules.</p>
+<h4 id="osm-building-spawner">OSM Building Spawner</h4>
+<p><img src="../../attachments/img/screenshots/node_osm_building_spawner.png" alt=""></p>
+<p>This spawner is dedicated to spawning buildings on places where buildings also exist in the real world.
+It uses the outline of a building and creates a 3D mesh with the chosen material applied.</p>
+<h4 id="pose-set-spawner">Pose Set Spawner</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/PoseSetSpawner/00_Overview.png" alt="Pose Set Spawner Node"></p>
+<p>➞ Visit the <a href="Nodes/PoseSetSpawner.html">in depth page</a></p>
+<h4 id="road-network-spawner">Road Network Spawner</h4>
+<p><img src="../../attachments/img/screenshots/node_road_network_spawner.png" alt=""></p>
+<p>This spawner spawns objects on all roads (note: roads can also be pedestrian walkways or similar).</p>
+<p><strong>Speciality for Road Network Spawner – Geometry Bending</strong>
+By adding the component RouteGeometryBender to a prefab, it is possible to bend the geometry with the route spline.</p>
+<p><img src="../../attachments/img/screenshots/route_geometry_bender.png" alt=""></p>
+<p>As the bending target, a MeshCollider and/or MeshFilter can be added to the component. The bending resolution determines the sample count on the spline. In order to get a satisfying result, an evenly tessellated mesh with a sufficient resolution should be provided.</p>
+<p><strong>Example Use Case:</strong>
+Generating tunnels or trenches to drive or fly through spaces in VR.</p>
+<h4 id="grid-spawner">Grid Spawner</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/GridSpawner/00_Overview.png" alt="Grid Spawner Node"></p>
+<p>➞ Visit the <a href="Nodes/GridSpawner.html">in depth page</a></p>
+<h4 id="unconstrained-grid-spawner">Unconstrained Grid Spawner</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/UnconstrainedGridSpawner/00_Unconstrained_Grid_Spawner_Node.png" alt=""></p>
+<p>Allows spawning objects in a grid, like the Grid Spawner, but is not restricted by the Extents of the Elastic Scene Generator.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Due to the Spawner being able to spawn objects in areas without Map data, the Spawner does not allow graph data injection.</p>
+</div>
+<h4 id="osm-spawner">OSM Spawner</h4>
+<p><img src="../../attachments/img/screenshots/node_osm_spawner.png" alt=""></p>
+<p>The OSMSpawner spawns objects based on OSM/Overpass queries.</p>
+<h4 id="collision-solver">Collision Solver</h4>
+<p>To keep objects from intersecting with each other, you can add a CollisionSolver component to the prefab of the game object that you want to place.</p>
+<p>Note that intersections can be detected only with game objects that have some sort of collider attached to them. The terrain itself is excluded from all intersections. The physics engine then takes care of shifting objects over a certain number of iterations.</p>
+<h3 id="elastic-scene-definition">Elastic Scene Definition</h3>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/ElasticSceneDefinition/00_Overview.png" alt="Elastic Scene Definition Node"></p>
+<p>➞ Visit the <a href="Nodes/ElasticSceneDefinition.html">in depth page</a></p>
+<h3 id="texture-layer">Texture Layer</h3>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/TextureLayer/00_Overview.png" alt="Texture Layer Node"></p>
+<p>➞ Visit the <a href="Nodes/TextureLayer.html">in depth page</a></p>
+<h3 id="data-provider-nodes">Data Provider Nodes</h3>
+<p>Data Provider nodes allow the user to select one element of a list using different approaches.<br>
+Currently the ElasticSDK offers the following nodes.</p>
+<h4 id="pick-prefab-randomly">Pick Prefab Randomly</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/PickPrefabRandomly/00_Overview.png" alt="Pick Prefab Randomly Node"></p>
+<p>➞ Visit the <a href="Nodes/PickPrefabRandomly.html">in depth page</a></p>
+<h4 id="pick-prefab-by-map">Pick Prefab by Map</h4>
+<p><img src="../../attachments/img/screenshots/Procedural-Generation/Nodes/PickPrefabByMap/00_Overview.png" alt="Pick Prefab by Map Node"></p>
+<p>➞ Visit the <a href="Nodes/PickPrefabByMap.html">in depth page</a></p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>
