@@ -765,12 +765,6 @@ references:
   commentId: T:Holoride.ElasticSDK.Compute.CopyBufferToTexture
   fullName: Holoride.ElasticSDK.Compute.CopyBufferToTexture
   nameWithType: CopyBufferToTexture
-- uid: Holoride.ElasticSDK.Compute.CopyBufferToTexture.Dispatch(UnityEngine.ComputeBuffer,UnityEngine.Texture)
-  name: Dispatch(ComputeBuffer, Texture)
-  href: api/Holoride.ElasticSDK.Compute.CopyBufferToTexture.html#Holoride_ElasticSDK_Compute_CopyBufferToTexture_Dispatch_UnityEngine_ComputeBuffer_UnityEngine_Texture_
-  commentId: M:Holoride.ElasticSDK.Compute.CopyBufferToTexture.Dispatch(UnityEngine.ComputeBuffer,UnityEngine.Texture)
-  fullName: Holoride.ElasticSDK.Compute.CopyBufferToTexture.Dispatch(UnityEngine.ComputeBuffer, UnityEngine.Texture)
-  nameWithType: CopyBufferToTexture.Dispatch(ComputeBuffer, Texture)
 - uid: Holoride.ElasticSDK.Compute.CopyBufferToTexture.Dispatch(UnityEngine.Rendering.CommandBuffer,UnityEngine.ComputeBuffer,UnityEngine.Texture)
   name: Dispatch(CommandBuffer, ComputeBuffer, Texture)
   href: api/Holoride.ElasticSDK.Compute.CopyBufferToTexture.html#Holoride_ElasticSDK_Compute_CopyBufferToTexture_Dispatch_UnityEngine_Rendering_CommandBuffer_UnityEngine_ComputeBuffer_UnityEngine_Texture_
