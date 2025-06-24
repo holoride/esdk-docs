@@ -2,1981 +2,1981 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.BaseRotation.RotationAxes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.BaseRotation.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.BufferPair-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.BufferPairExtensions.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.CacheAnnotatedMethodsAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.CacheSubTypesAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.CameraRigParentRotation.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.CollectionExtensions.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.Blur.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.ComputeAlgorithms.PushPullHookAsync.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.ComputeAlgorithms.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.ComputeShaderKernel.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.CopyBufferToBuffer.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.CopyBufferToPreviewTexture.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.CopyBufferToTexture.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.CopyTextureToBuffer.GrayScaleConversion.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.CopyTextureToBuffer.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.Inpaint.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.MathOperators.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.MinMax.MinMaxResultConsumer.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.MinMax.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.Remap.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.Swizzle.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.Threshold.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Compute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ContextProviderAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.DataProviderWorker-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.DataRegion.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.DefaultRequestAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ElasticObjectPoolDefaultSettings.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ElasticObjectPoolManager.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ElasticObjectPoolSettings.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ElasticSceneGenerator.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ExtensibleObject-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.FileUtils.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.FixedPositionStateReceiverBackend.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.FloatingPlatform.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.FrameBudgetTask.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GenerationContext.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GenerationSettings.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GenerationState.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GeoCoordinate.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GlobalBounds.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GlobalPose.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GlobalPosition.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GlobalSettings.TrackingReference.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.GlobalSettings.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DataProviders.DataProviderNode-1.DataProviderNodeWorker-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DataProviders.DataProviderNode-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DataProviders.IPrefabProviderEvaluationHandler.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DataProviders.MapAndFloatWeightedPrefabData.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DataProviders.PrefabSelectorNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DataProviders.ProviderDataBase-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DataProviders.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DefaultNodeColorAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DefaultNodeNameAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.DefaultPreviewVisibilityAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.ElasticNodeGraph.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.ElasticSceneDefinitionNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.ExperimentalNodeAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.FloatListFromMapProvider.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.FloatValueFromMapProvider.FloatValue.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.FloatValueFromMapProvider.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.HidePreviewAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.IGenerationSettings.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.InjectGraphDataAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.IWorkerMapper-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.IWorkerMapper.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Maps.BinaryMathNodeBase.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Maps.MapNode.MapWorker-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Maps.MapNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Maps.TernaryMathNodeBase.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Maps.UnaryMathNodeBase.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Maps.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Node-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Node.InputAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Node.OutputAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Node.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.NodePath.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.NodePathAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Portals.IPortalInputNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Portals.IPortalOutputNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Portals.PortalInputNode-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Portals.PortalOutputNode-2.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Portals.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.PoseSetProvider.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.PoseSets.PoseSetNode.PoseSetWorker-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.PoseSets.PoseSetNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.PoseSets.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Spawners.ICollisionSolverSpawnerWorker.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Spawners.PermittedAreaSpawnerNode.PermittedAreaSpawnerWorker-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Spawners.PermittedAreaSpawnerNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Spawners.SpawnerNode.SpawnerWorker-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Spawners.SpawnerNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.Spawners.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.XNodePipelineAssembler.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Graph.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Holofile.Record.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Holofile.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IContextProvider.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IElasticObjectPoolSettings.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IExecutionPriority.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IGenerationContext.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IGenerationState.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.InitializeAfterSingletonsMethodAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Interval.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IntervalAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IPatternDescriptor-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IPipelineAssembler.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IPipelineContainer.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IPipelineNode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IPipelineWorker.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IPrefabInstantiationProvider.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IPreprocessingGenerationContext.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IRecenterOffsetManagerBackend.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IReplayStream.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IRoute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ISettingsProvider.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ISharedGeoCoordinate.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IShiftParent.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IStateReceiverListener.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.IStateReceiverLocalizationEventListener.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ITileDataProvider-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ITileDataService-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.KeyValuePairExtensions.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.LoadResourceResult.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.LocalizationEvents.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.LocalizationMode.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.LocalizationModes.StationaryModeManager.State.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.LocalizationModes.StationaryModeManager.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.LocalizationModes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Maneuver.ActionType.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Maneuver.DirectionType.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Maneuver.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.MapUtils.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.MapWorker.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.MeshUtils.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.MovingGrid-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.NewtonsoftJsonVulnFix.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.NullStateReceiverBackend.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.PatternDescriptorProperties-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Pipeline.CyclicGraphException.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Pipeline.MissingInputException.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Pipeline.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.PipelineWorkerBase.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Player.VehicleLocalizationStatusUnityEvent.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Player.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.PooledObject.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.PoseSetWorker.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.PrefabInstantiationContext.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RasterizationUtils.DrawStyle.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RasterizationUtils.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RecenterOffsetManager.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Replay.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ReplayStateReceiverBackend.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ReplayStream.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RequireGenerationContextAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RingBufferFilter-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RouteGeometryBender.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RouteSegments.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RouteTraveller.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.RuntimeInitializeAfterSingletonsMethodAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SensorDataInterpolator.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.ServiceStateReceiverBackend.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SharedGeoCoordinate.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Singleton-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SingletonBase.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SparseCellDataStructure-2.DataValueToCellKeyDelegate.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SparseCellDataStructure-2.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SpawnCandidate.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SpawnCandidateStructure-1.PositionToCellKeyDelegate.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SpawnCandidateStructure-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SpawnerWorker.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SpeedCategory.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.SpeedSegment.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Spline.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiver.BackendChangedHandler.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiver.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiverBackend.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiverBackendAttribute.Platform.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiverBackendAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiverBackendSelector.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiverEventListenerAdapter.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiverInitializationError.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateReceiverState.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StateRecorder.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StationaryModeEvents.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StringUnityEvent.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.StylizedVehicleRotation.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TerrainCanvas.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TerrainGenerationSettings.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TerrainGenerationState.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TickBasedMeshPool.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileAreaDescription.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileDataCache.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileDataCacheFormatVersionAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileDataManager-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileDataService-1.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileDataService.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileDataServiceConfiguration.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileDataServiceConfigurationUtils.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileImageServiceRoadMask.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TileTextureManager.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TravelInformationState.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TypeCacheSingleton.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.TypeExtensions.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.UniTaskUtils.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Utils.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.Vector3Extensions.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.VehicleLocalizationStatus.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.VehiclePosition.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.VehicleRotation.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.VehicleSensorState.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.WorkerGroupAttribute.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.WorldShiftManager.OriginShiftEvent.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.WorldShiftManager.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/Holoride.ElasticSDK.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/api/index.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/index.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Custom-Nodes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Custom-Nodes/Custom-Map-Nodes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Custom-Nodes/Custom-Spawner-Nodes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Events-And-Callbacks.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Events-And-Callbacks/Localization-Events-And-Sensor-Data.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Events-And-Callbacks/Route-Based-Events.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Events-And-Callbacks/Scene-Generation-Events.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Graph-Data-Access.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Graph-Data-Access/Global-Graph-Output.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Graph-Data-Access/How-To-Graph-Data-Access.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Graph-Data-Access/Prefab-Component-Injection.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Runtime-Behavior.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Runtime-Behavior/Objects-React-To-Map.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Code/Runtime-Behavior/Objects-React-To-Vehicle.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Minimal-Scene-Setup.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Minimal-Scene-Setup/Creating-a-Simple-Scene_Content.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Minimal-Scene-Setup/Creating-a-Simple-Scene.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Minimal-Scene-Setup/Elastic-SDK-Setup_Content.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Minimal-Scene-Setup/Elastic-SDK-Setup.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Minimal-Scene-Setup/The-Elastic-Scene-Generator.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Minimal-Scene-Setup/The-holoride-Player.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Test-Environment.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Test-Environment/Build-Setup_Content.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Test-Environment/Build-Setup.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Test-Environment/In-Vehicle-Tests.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/Test-Environment/Replay-Holo-Files.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/The-Elastic-Graph.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/The-Elastic-Graph/Graph-Overview_Content.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/The-Elastic-Graph/Graph-Overview.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/The-Elastic-Graph/Map-Nodes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/The-Elastic-Graph/Pose-Nodes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Getting-Started/The-Elastic-Graph/Spawner-Nodes.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/How-To-Guides.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/How-To/Custom-Node.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/How-To/Graph-Data-Access.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/How-To/Map-Queries.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/How-To/Pose-Clusters.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Project-Setup/Best-Practices.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Project-Setup/Build-Setup-for-Android-HMDs.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Project-Setup/Testing.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/Project-Setup/Vehicle-Motion.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/System-Information.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/System-Information/Legal-Information.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/System-Information/Supported-XR-Devices.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/System-Information/Vehicle-Localization-and-Headset-Tracking.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Spawning.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Spawning/Grid-Spawner-And-Permitted-Area.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Spawning/How-To-Pose-Clusters.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Spawning/How-To-Queries.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Spawning/Pose-Based-Spawning.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Spawning/Poses-and-Gradients.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Terrain-Advanced.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Terrain-Advanced/Pose-Based-Maps.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Terrain-Advanced/Texture-Based-Maps.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Terrain-Introduction.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Terrain-Introduction/Distances-and-Heights.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Terrain-Introduction/Masks-and-Texture-Layers.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Elastic-Terrain-Introduction/Remap-The-Multi-Purpose-Tool.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Quality-and-Performance.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Quality-and-Performance/Framerate-Optimization.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Quality-and-Performance/Object-Pooling.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/learn/World-Creation/Quality-and-Performance/Scene-Generation-and-Update-Time.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Design-Principles.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Experience-Layers.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Experience-Layers/2D-Canvas.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Experience-Layers/Centre-Point-Of-Motion.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Experience-Layers/Elastic-Environment.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Experience-Layers/Vehicle-Volume.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Experience-Layers/Vehicle-Volume/Maximum-vehicle-customization.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/Experience-Layers/Vehicle-Volume/Recommended-minimal-vehicle.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/UI-Guidelines.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/UI-Guidelines/2D-Canvas-UI.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/UI-Guidelines/Accessibility-Guidelines.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/UI-Guidelines/Motion-Sickness-Guidelines.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/UI-Guidelines/UI-Elements.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Experience-Design/User-Interaction.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Extension-Packages.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Extension-Packages/Fade-to-Background-Built-In.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Best-Practices.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Graph-Node-Overview.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/BlendTextureAtPoseHeights.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/DistanceTransform.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/ElasticSceneDefinition.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/GridSpawner.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/OSMPoses.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/PerlinNoise.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/PickPrefabByMap.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/PickPrefabRandomly.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/Portals.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/PoseClusterPoissonDisc.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/PoseClusterRegularPolygon.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/PoseSetSpawner.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/Remap.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/RoadNetworkMask.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/RoadNetworkPoses.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/SetHeightsByMap.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Procedural-Generation/Nodes/TextureLayer.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Quick-Start.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Quick-Start/Build-Setup.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Quick-Start/Creating-a-Simple-Scene.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/Quick-Start/Graph-Overview.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/System-Information.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/System-Information/Legal-Information.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/System-Information/Localization-Events-Content.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/System-Information/Map-Services.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://elasticsdk.holoride.com/manual/System-Information/Quality-Events.html</loc>
-    <lastmod>2025-06-24T09:19:06+00:00</lastmod>
+    <lastmod>2025-06-24T12:58:15+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
