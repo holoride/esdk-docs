@@ -32,7 +32,7 @@
   "api/Holoride.ElasticSDK.CameraRigParentRotation.html": {
     "href": "api/Holoride.ElasticSDK.CameraRigParentRotation.html",
     "title": "Class CameraRigParentRotation | ElasticSDK Documentation",
-    "keywords": "Class CameraRigParentRotation Inheritance object Object Component Behaviour MonoBehaviour CameraRigParentRotation Namespace: Holoride.ElasticSDK Assembly: Holoride.ElasticSDK.Runtime.dll Syntax [HelpURL(\"http://localhost:8080/api/Holoride.ElasticSDK.CameraRigParentRotation.html\")] public sealed class CameraRigParentRotation : MonoBehaviour Methods Recenter() Declaration [ContextMenu(\"Recenter\")] public void Recenter()"
+    "keywords": "Class CameraRigParentRotation Inheritance object Object Component Behaviour MonoBehaviour CameraRigParentRotation Namespace: Holoride.ElasticSDK Assembly: Holoride.ElasticSDK.Runtime.dll Syntax public sealed class CameraRigParentRotation : MonoBehaviour Methods Recenter() Declaration [ContextMenu(\"Recenter\")] public void Recenter()"
   },
   "api/Holoride.ElasticSDK.CollectionExtensions.html": {
     "href": "api/Holoride.ElasticSDK.CollectionExtensions.html",
