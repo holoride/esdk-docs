@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Spawner Nodes | ElasticSDK Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Spawner Nodes | ElasticSDK Documentation ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/featherlight.min.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+  <meta property="docfx:rel" content="../../../">
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper" class="other-page">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg no-lightbox" src="../../../logo.svg" alt="holoride" width="110">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+
+            <div class="dropdown navbar-form navbar-right version-dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="versionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="versionText"></span>
+                <span class="glyphicon dropdown-icon"></span>
+              </button>
+              <ol class="dropdown-menu dropdown-menu-right" id="versionDropdownMenu" aria-labelledby="versionDropdown">
+              </ol>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div id="otherColumn" class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<div class="button-container">
+    <div class="align-left">
+        <a href="Pose-Nodes.html" class="button button--text">&#10094; Pose Nodes</a>
+    </div>
+    <div class="align-right">
+        <a href="../Test-Environment.html" class="button button--text">Test Environment &#10095;</a>
+    </div>
+</div>
+<hr class="rounded">
+<h2 id="spawner-nodes">Spawner Nodes</h2>
+<p>The Spawner node type is unique within the Elastic Graph system because unlike Map or Pose nodes, Spawner nodes do not
+introduce and modify new sets of data to the graph. Instead, they use parts of such data sets to instantiate objects in
+the virtual world, at runtime.</p>
+<p>The Elastic SDK ships with a variety of Spawner nodes that we will not cover in-depth here but rather give an
+introduction on how to use them for an elastic experience.</p>
+<p><img src="../../../attachments/img/screenshots/Getting-Started/The-Elastic-Graph/Spawner-Nodes/00_Spawner_Nodes_Overview.png" alt=""></p>
+<h2 id="the-moving-grid">The Moving Grid</h2>
+<p>Before we start looking into individual Spawner nodes, there is an underlying principle that each Spawner inherits. To
+spawn objects in an elastic manner we have to be able to frame a space in the virtual world correlating to the
+real-world geolocation of the player. <br>
+We call this principle the Moving Grid.</p>
+<p><img src="../../../attachments/img/screenshots/Getting-Started/The-Elastic-Graph/Spawner-Nodes/01_Spawner_Nodes_Moving_Grid_Graph.png" alt="">
+<img src="../../../attachments/img/screenshots/Getting-Started/The-Elastic-Graph/Spawner-Nodes/01_Spawner_Nodes_Moving_Grid_Scene.png" alt=""></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Select a Spawner node in the graph to visualize the Moving Grid in Unity's scene view.
+The grid visualization will also update at runtime.</p>
+</div>
+<p>The Moving Grid is a data structure that provides a two-dimensional local grid of cells relative to the position of the
+generation origin. The grid position is intended to move when the player moves from a current cell to another inside
+this grid. Therefore, on each move, it will free instances that fall outside the grid and create new ones for the next
+row of cells.</p>
+<h3 id="grid-extents">Grid Extents</h3>
+<p>Since Spawners utilize the Moving Grid, they also expose an Extents field on their nodes. This setting determines the
+size of the Moving Grid and thus the area into which objects can be spawned. The basic idea here is that larger objects
+should be spawned in larger extents, since they are supposed to be seen at a distance, where smaller objects can be
+discarded.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>In general Spawners only work inside the generation bounds, since they can only access map data for this area.
+So if a Spawner's extents are exceeding the Elastic Scene Generator's extents, they will get clamped.
+One exception from this is the <a href="../../../manual/Procedural-Generation/Graph-Node-Overview.html#unconstrained-grid-spawner">Unconstrained Spawner</a>
+which can spawn beyond those bounds.</p>
+</div>
+<h3 id="permitted-area">Permitted Area</h3>
+<p>Many Spawners will also provide a Map node input called Permitted Area. This input can be used to mask off area where no
+objects should get instantiated e.g. the road network.</p>
+<h2 id="prefab-list--data-provider">Prefab List &amp; Data Provider</h2>
+<p>Each Spawner of the Elastic SDK implements a Prefab List field that enables the user to link a node of type Data
+Provider. This effectively allows to references multiple Unity Prefab game objects that will then be selected for the
+spawning process, according to the Data Provider node implementation.</p>
+<p><img src="../../../attachments/img/screenshots/Getting-Started/The-Elastic-Graph/Spawner-Nodes/02_Spawner_Nodes_List_Graph.png" alt="">
+<img src="../../../attachments/img/screenshots/Getting-Started/The-Elastic-Graph/Spawner-Nodes/02_Spawner_Nodes_List_Scene.png" alt=""></p>
+<p>This example uses the <a href="../../../manual/Procedural-Generation/Graph-Node-Overview.html#pick-prefab-randomly">Pick Prefab Randomly</a>
+node so that the two referenced Prefabs are picked based on a random value compared to their weights.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>In case you do not want to reference multiple assets you can use the single Prefab selection field on the Spawner nodes.
+This field will automatically disappear when a Prefab List is connected.</p>
+</div>
+<h2 id="pose-set-spawner">Pose Set Spawner</h2>
+<p>As its name suggest the Pose Set Spawner is a spawner that operates on a set of Poses. The Pose Set is a mandatory input
+that the Spawner uses to derive spawning positions and rotations in the engine scene.</p>
+<p>In contrast to other Elastic SDK Spawners, the Pose Set Spawner is completely modular in a way, that you control how and
+where objects are spawned by modifying the set of poses that you provide as input.</p>
+<p>The following examples shows a setup that modifies a set of Poses so that the Pose Set Spawner will only spawn objects
+where there is no road as well as place these object at the correct height of the surrounding terrain.</p>
+<p><img src="../../../attachments/img/screenshots/Getting-Started/The-Elastic-Graph/Spawner-Nodes/03_Spawner_Nodes_Final_Graph.png" alt=""></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Here we use the Set Height By Map Modifier after the Remove By Map Modifier to save some computational cost,
+since the processed Pose Set will be smaller after the removal process.</p>
+</div>
+<p><img src="../../../attachments/img/screenshots/Getting-Started/The-Elastic-Graph/Spawner-Nodes/03_Spawner_Nodes_Final_Scene.png" alt=""></p>
+<p>Due to the variety of available Pose Set Modifiers, the Pose Set Spawner is the most versatile Spawner in the Elastic
+SDK.</p>
+<p>There are much more complex setups for the Pose Set Spawner, including nodes
+like <a href="../../../manual/Procedural-Generation/Graph-Node-Overview.html#translate-along-gradient">Translate Along Gradient</a>
+, which allow spawn behavior to be customized to user-defined environmental features.<br>
+While we will not cover these setups in this chapter, we do so in more advanced learning tracks. For a shortcut check
+out the Further Reading section of this page.</p>
+<hr class="rounded">
+<h2 id="further-reading">Further Reading</h2>
+<p><a href="../../World-Creation/Elastic-Spawning.html">World Creation: Elastic Spawning</a> - Learn how to use essential Spawner
+nodes of the Elastic SDK.</p>
+<hr class="rounded">
+<div class="button-container">
+    <div class="align-left">
+        <a href="Pose-Nodes.html" class="button button--text">&#10094; Pose Nodes</a>
+    </div>
+    <div class="align-right">
+        <a href="../Test-Environment.html" class="button button--text">Test Environment &#10095;</a>
+    </div>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <br>
+              <a href="#top">Back to top</a>
+            </span>
+      
+              © <span id="year"></span> &nbsp; holoride
+              <br>
+              <a href="https://www.holoride.com/en/legal/privacy-policy" target="_blank">Privacy</a>
+              &emsp;
+              <a href="https://www.holoride.com/en/legal/imprint" target="_blank">Imprint</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/holoride.js"></script>
+    <script type="text/javascript" src="../../../styles/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../../styles/plugin-featherlight.js"></script>
+    <script type="text/javascript" src="../../../styles/chart.min.js"></script>
+    <script type="text/javascript" src="../../../styles/chartjs-plugin-dragdata.min.js"></script>  </body>
+</html>
